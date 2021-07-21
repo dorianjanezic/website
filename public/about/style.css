@@ -32,14 +32,14 @@ html {
 
 body{
     background: black;
-    padding-left: 30rem;
+    /* padding-left: 30rem; */
     background: transparent;
 }
 
 header {
-    position: fixed;
+    /* position: fixed;
     top: 0;
-    left: 0;
+    left: 0; */
     background: transparent;
     display: flex;
     align-items: end;
@@ -73,7 +73,7 @@ header .logo span {
 }
 
 header .navbar a{
-float: left;
+/*float: left;*/
 font-size: 2rem;
 color: white;
 margin: 0;
@@ -87,7 +87,10 @@ header .navbar a:hover{
     color: var(--main-color);
 }
 
-
+.container {
+  width: 1140px;
+  margin: auto;
+}
 
 #projects {
     margin: 4rem;
@@ -107,42 +110,62 @@ header .navbar a:hover{
 }
 
 .about-page {
-
-   display: block;
+   padding: 10px;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
 }
 
 .description {
-    color: white;
+  color: white;
+  max-width: 50%;
+}
+
+.description p {
+  margin-bottom: 20px;
+}
+
+.contacts {
+  color: white;
 }
 
 @media (max-width:991px) {
     html {
-        font-size: 55%;
+        /* font-size: 55%; */
     }
      body {
          padding: 0;
+     }
+
+     .container {
+       width: 100%;
      }
 
      #menu-bars {
          display:initial;
      }
 
-     header {
+     /* header {
         left: -120%;
         padding: auto;
-     }
+     } */
 
      header.active {
          left: 0%;
      }
 
+     .about-page {
+       grid-template-columns: repeat(1, 1fr);
+     }
 
+     .description {
+       max-width: 100%;
+     }
 }
 
 
 @media (max-width:450px) {
     html {
-        font-size: 50%;
+        /* font-size: 50%; */
     }
 
     header {
