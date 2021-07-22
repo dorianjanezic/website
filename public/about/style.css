@@ -113,6 +113,7 @@ header .navbar a:hover{
    padding: 10px;
    display: grid;
    grid-template-columns: repeat(2, 1fr);
+   margin: 50px;
 }
 
 .description {
@@ -126,6 +127,8 @@ header .navbar a:hover{
 
 .contacts {
   color: white;
+  font-size: larger;
+
 }
 
 @media (max-width:991px) {
