@@ -1,6 +1,6 @@
 @font-face {
     font-family: "biome";
-    src: url("biome.ttf");
+    src: url("neue.ttf");
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
@@ -15,7 +15,7 @@
     box-sizing: border-box;
     outline: none; border: none;
     text-decoration: none;
-    transition: all .2s linear;
+    transition: all .2s;
     line-height: 1.5;
 }
 
@@ -33,34 +33,45 @@ html {
 body{
     background: black;
     /* padding-left: 30rem; */
-    background: transparent;
 }
 
 header {
-    /* position: fixed;
+    position: fixed;
     top: 0;
-    left: 0; */
+    left: 0;
     background: transparent;
     display: flex;
     align-items: end;
     justify-content: space-between;
     z-index: 1000;
     flex-flow: column;
-    width: 30rem;
+    width: 10rem;
     text-align: center;
     flex-direction: row;
     width: 100%;
-    margin:3rem;
-    font-weight: bolder;
-    text-transform: capitalize;
+  
+}
+
+.navbar {
+    display: contents;
+
+    justify-content: space-between;
+}
+
+
+.main-nav {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    justify-content: space-between;
 }
 
 
 
 header .logo{
-    text-transform: uppercase;
     color:white;
-    font-size: 3rem;
+    font-size: 5rem;
+    text-decoration: none;
 }
 
 header .logo:hover {
@@ -73,14 +84,15 @@ header .logo span {
 }
 
 header .navbar a{
-/*float: left;*/
-font-size: 2rem;
-color: white;
-margin: 0;
-justify-content: space-between;
-flex-direction: row;
-width: 70%
-}
+    /* float: left; */
+    font-size: 5rem;
+    color: white;
+    margin: 0;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-between;
+    }
 
 header .navbar a:hover{
     /* letter-spacing: .2rem; */
@@ -92,9 +104,6 @@ header .navbar a:hover{
   margin: auto;
 }
 
-#projects {
-    margin: 4rem;
-}
 
 #menu-bars {
     position: fixed;
@@ -119,6 +128,7 @@ header .navbar a:hover{
 .description {
   color: white;
   max-width: 50%;
+  font-size: large;
 }
 
 .description p {
