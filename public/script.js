@@ -26,10 +26,10 @@ var mic;
 let anglea, beta, gamma;
 
 //load font
-let myFont;
-function preload() {
-  myFont = loadFont('biome.ttf');
-}
+// let myFont;
+// function preload() {
+//   myFont = loadFont('biome.ttf');
+// }
 
 function windowResized () {
   resizeCanvas(windowWidth, windowHeight);

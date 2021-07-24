@@ -10,7 +10,7 @@
 }
 
 *{
-    font-family: 'neue', sans-serif;
+    font-family: 'biome', sans-serif;
     margin: 0; padding: 0;
     box-sizing: border-box;
     outline: none; border: none;
@@ -50,18 +50,19 @@ header {
     text-align: center;
     flex-direction: row;
     width: 100%;
+    letter-spacing: 0.1rem;
   
 }
 
 header .logo{
     text-transform: uppercase;
     color:white;
-    font-size: 3rem;
+    font-size: 10rem;
    
 }
 
 header .logo:hover {
-    letter-spacing: .2rem;
+    letter-spacing: .3rem;
 }
 
 header .logo span {
@@ -90,7 +91,6 @@ color: white;
 margin: 0;
 justify-content: space-between;
 flex-direction: row;
-width: 50%;
 justify-content: space-between;
 }
 
@@ -99,6 +99,13 @@ header .navbar a:hover{
     color: var(--main-color);
 }
 
+#about {
+  margin: 50px 0 0 43px;
+}
+
+#projects {
+ margin: 50px 43px 0 0;
+}
 
 #menu-bars {
     position: fixed;
@@ -154,10 +161,10 @@ header .navbar a:hover{
          display:initial;
      }
 
-     header {
+     /* header {
         left: -100%;
         padding: auto;
-     }
+     } */
 
      header.active {
          left: 0%;
