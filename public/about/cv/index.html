@@ -6,17 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.1/p5.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="../style.css">
     <title>Portfolio website</title>
 </head>
 <body>
 
-    <!-- <div class="cursor-1"></div>
-    <div class="cursor-2"></div> -->
-
-    <div id="menu-bars" class="fas fa-bars"></div>
-
-    <header>
+    <!-- <header>
 
         <a href="#" class="logo" onclick="document.location=''"><i>Dorian Janežič</a></i>
 
@@ -25,72 +20,82 @@
             <a href="#projects" id="projects">projects</a>
 
         </nav>
+    </header> -->
+    <a href="/" id="home"><i>Dorian Janežič</i></a>
+    <header>
+        <nav class="navbar">
+
+            <div class="main-nav">
+                <a href="/about" id="about">about</a>
+                <a href="/projects" id="projects">projects</a>
+            </div>
+        </nav>
     </header>
+    <div class="container">
+      <article class="cv">
 
-    <article class="cv">
+        <section class="education">
+            <h1>Education</h1>
+            <div class="">
+                <h3>NEW YORK UNIVERSITY Master of Arts | class of 2021</h3>
+                <p>IMA Low Res (ITP Tisch School of the Arts and IMA NYU Shanghai)</p>
+                <p>2021 Tisch Graduate Research Fund Award</p>
+                <p>Recipient of funding as part of the IMA LowRes New Interfaces for Musical Expression (NIME) Club’s “International Soundboard of Tourism” project.</p>
 
-    <section class="education">
-        <h1>Education</h1>
-        <div class="university">
-            
-            <h3>NEW YORK UNIVERSITY Master of Arts | class of 2021</h3>
-            <p>IMA Low Res (ITP Tisch School of the Arts and IMA NYU Shanghai)</p>
-            <p>2021 Tisch Graduate Research Fund Award</p>
-            <p>Recipient of funding as part of the IMA LowRes New Interfaces for Musical Expression (NIME) Club’s “International Soundboard of Tourism” project.</p>
+            </div>
+            <div class="">
+              <h3>INTERNATIONAL UNIVERSITY OF MONACO | Class of 2019</h3>
+              <p>Bachelor of Communication & Entertainment</p>
+              <p>Member of IUM Trading Club</p>
+              <p>Member of TwoHelp charity organization</p>
+            </div>
+        </section>
 
-            <h3>INTERNATIONAL UNIVERSITY OF MONACO | Class of 2019</h3>
-            <p>Bachelor of Communication & Entertainment</p>
-            <p>Member of IUM Trading Club</p>
-            <p>Member of TwoHelp charity organization</p>
-
-        </div>
-    </section>
-
-    <section class="experience">
-        <h1>Work Experience</h1>
-
-        <div class="work-experience">
-            <h3>SF Marine S.A.R.L. - Digital communication manager | 2018</h3>
-            <p>Rebranding of the company, creation of new website, press releases, graphic designs and social media</p>
-
-            <h3>KRG D.O.O. - Marketing executive | 2019 & 2020</h3>
-            <p>Developing and implementing intuitive marketing strategies based on extensive research and analysis to evaluate trends</p>
-
-
-        </div>
-    </section>
+      <section class="experience">
+          <h1>Work Experience</h1>
+          <div class="">
+              <h3>SF Marine S.A.R.L. - Digital communication manager | 2018</h3>
+              <p>Rebranding of the company, creation of new website, press releases, graphic designs and social media</p>
+          </div>
+          <div>
+              <h3>KRG D.O.O. - Marketing executive | 2019 & 2020</h3>
+              <p>Developing and implementing intuitive marketing strategies based on extensive research and analysis to evaluate trends</p>
+          </div>
+      </section>
 
 
-    <section class="creative-tech">
-        <h1>Creative Technology</h1>
+      <section class="creative-tech">
+          <h1>Creative Technology</h1>
 
-        <div class="tech-show">
-            <h3>ITP Spring Show - Biophonica | May 2021</h3>
-            <p>Designed, coded and presented an interactive web-browser experience that uses integrated smartphone sensors</p>
+          <div class="">
+              <h3>ITP Spring Show - Biophonica | May 2021</h3>
+              <p>Designed, coded and presented an interactive web-browser experience that uses integrated smartphone sensors</p>
+          </div>
+          <div class="">
+              <h3>ITP Winter Show - Chatimal | December 2020</h3>
+              <p>In collaboration with Christina Lan, I’ve presented an interactive web browser chat using HTML, CSS, JavaScript and Sockets.io</p>
+          </div>
+      </section>
 
-            <h3>ITP Winter Show - Chatimal | December 2020</h3>
-            <p>In collaboration with Christina Lan, I’ve presented an interactive web browser chat using HTML, CSS, JavaScript and Sockets.io</p>
-        </div>
-    </section>
+      <section class="skills">
+          <h1>Skills</h1>
+          <div class="">
+              <h3>Creative Software</h3>
+              <p>Sound | Ableton</p>
+              <p>Visual | Adobe Suite (Photoshop, Illustrator, AfterEffects, PremierePro), Figma, TouchDesigner</p>
+              <p>VR / AR | Unity</p>
+              <p>Microsoft Office Suite</p>
+          </div>
+          <div class="">
+              <h3>Coding</h3>
+              <p>Web | JavaScript, Node.js, HTML, CSS, p5.js, Tone.js</p>
+              <p>IoT | MQTT</p>
+              <p>Physical computing | Arduino, ESP32</p>
+          </div>
+      </section>
 
-    <section class="skills">
-        <h1>Skills</h1>
-        <div class="creative-skills">
-            <h3>Creative Software</h3>
-            <p>Sound | Ableton</p>
-            <p>Visual | Adobe Suite (Photoshop, Illustrator, AfterEffects, PremierePro), Figma, TouchDesigner</p>
-            <p>VR / AR | Unity</p>
-            <p>Microsoft Office Suite</p>
-        </div>
-        <div class="coding">
-            <h3>Coding</h3>
-            <p>Web | JavaScript, Node.js, HTML, CSS, p5.js, Tone.js</p>
-            <p>IoT | MQTT</p>
-            <p>Physical computing | Arduino, ESP32</p>
-        </div>
-    </section>
-
-    </article>
+      </article>
+  </div>
     <!-- <script src="script.js"></script> -->
 </body>
 </html>
