@@ -1,6 +1,6 @@
 @font-face {
     font-family: "biome";
-    src: url("neue.ttf");
+    src: url("roman.otf");
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
@@ -16,7 +16,7 @@
     outline: none; border: none;
     text-decoration: none;
     /* text-transform: capitalize; */
-    transition: all .2s linear;
+    /* transition: all .2s linear; */
     line-height: 1.5;
 }
 
@@ -51,7 +51,6 @@ header {
     flex-direction: row;
     width: 100%;
     letter-spacing: 0.1rem;
-  
 }
 
 header .logo{
@@ -62,7 +61,7 @@ header .logo{
 }
 
 header .logo:hover {
-    letter-spacing: .3rem;
+    /* letter-spacing: .3rem; */
 }
 
 header .logo span {
@@ -81,12 +80,14 @@ header .logo span {
     position: absolute;
     width: 100%;
     justify-content: space-between;
+    border-bottom: 1px solid #fff;
+    /* height: 140px; */
 }
 
 
 header .navbar a{
 /* float: left; */
-font-size: 5rem;
+font-size: 7rem;
 color: white;
 margin: 0;
 justify-content: space-between;
@@ -95,16 +96,16 @@ justify-content: space-between;
 }
 
 header .navbar a:hover{
-    letter-spacing: .2rem;
+    /* letter-spacing: .2rem; */
     color: var(--main-color);
 }
 
 #about {
-  margin: 50px 0 0 43px;
+  margin: 65px 0 0 60px;
 }
 
 #projects {
- margin: 50px 43px 0 0;
+ margin: 65px 60px 0 0;
 }
 
 #menu-bars {
@@ -147,6 +148,7 @@ header .navbar a:hover{
     flex-wrap: wrap;
     gap: 1.5rem;
 }
+
 
 
 @media (max-width:991px) {

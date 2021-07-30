@@ -11,7 +11,8 @@
 
 *{
     font-family: 'biome', sans-serif;
-    margin: 0; padding: 0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     outline: none; border: none;
     text-decoration: none;
@@ -28,6 +29,7 @@ html {
 body{
     background: black;
     padding-left: 30rem;
+    font-size: 24px;
 }
 
 
@@ -48,6 +50,7 @@ header {
     margin:2rem;
     font-weight: bolder;
     text-transform: capitalize;
+    letter-spacing: 0.1rem;
 }
 
 h1 {
@@ -136,6 +139,10 @@ header .navbar a:hover{
     font-size: 3rem;
     cursor: pointer;
     display: none;
+}
+
+.cv .nyu1 {
+    margin-bottom: 50px;
 }
 
 .cursor-1 {

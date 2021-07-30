@@ -1,12 +1,12 @@
-- cv tekst enake pisave kot na levi
+/* - cv tekst enake pisave kot na levi
 
 CV: podobno kot ma https://matt-romein.com/cv
 meni lahko podoben kot na about strani
-kontakt je mailot
+kontakt je mailot */
 
 @font-face {
-    font-family: "biome";
-    src: url("neue.ttf");
+  font-family: "biome";
+  src: url("roman.otf");
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
@@ -39,6 +39,11 @@ html {
 body{
     background: black;
     /* padding-left: 30rem; */
+    overflow:hidden;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 header {
@@ -56,16 +61,15 @@ header {
     flex-direction: row;
     width: 100%;
     border-bottom: 1px solid #fff;
+    letter-spacing: 0.1rem;
 }
 
 #about {
-  margin-top: 40px;
-  margin-left: 20px;
+  margin: 65px 0 0 60px;
 }
 
 #projects {
-  margin-top: 40px;
-  margin-right: 20px;
+  margin:65px 60px 0 0;
 }
 
 #home {
@@ -90,7 +94,7 @@ header {
     /*position: absolute;*/
     width: 100%;
     justify-content: space-between;
-    height: 140px;
+    /* height: 140px; */
     background: #000000;
 }
 
@@ -113,7 +117,7 @@ header .logo span {
 
 header .navbar a{
     /* float: left; */
-    font-size: 4rem;
+    font-size: 7rem;
     color: white;
     margin: 0;
     justify-content: space-between;
@@ -129,7 +133,7 @@ header .navbar a:hover{
 .container {
   width: 1140px;
   margin: auto;
-  padding-top: 140px;
+  padding-top: 200px;
 }
 
 
@@ -157,6 +161,11 @@ header .navbar a:hover{
   padding: 10px;
   margin: 50px;
   color: #ffffff;
+  font-size: 2rem;
+}
+
+.cv .h1 {
+  text-decoration: overline;
 }
 
 .cv .education {
@@ -165,8 +174,20 @@ header .navbar a:hover{
   margin-bottom: 50px;
 }
 
+.cv .creative-tech h1 {
+  text-decoration: overline;
+}
 .cv .education h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  text-decoration: overline;
+}
+
+.cv .experience h1 {
+  text-decoration: overline;
+}
+
+.cv .skills h1 {
+  text-decoration: overline;
 }
 
 .cv .experience {
@@ -176,7 +197,7 @@ header .navbar a:hover{
 }
 
 .cv .experience h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .cv .creative-tech {
@@ -186,7 +207,7 @@ header .navbar a:hover{
 }
 
 .cv .creative-tech h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .cv .skills {
@@ -195,14 +216,38 @@ header .navbar a:hover{
   margin-bottom: 30px;
 }
 
+.cv .nyu1 {
+  margin-bottom: 50px;
+}
+
+.cv .nyu1 p {
+  margin-bottom: 20px;
+}
+
+.cv .ium1 p {
+  margin-bottom: 20px;
+}
+
+.cv .sf {
+  margin-bottom: 50px;
+}
+
+.cv .biophonica {
+  margin-bottom: 50px;
+}
+
+.cv .software {
+  margin-bottom: 50px;
+}
+
 .cv .skills h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .description {
   color: white;
-  max-width: 75%;
-  font-size: large;
+  max-width: 80%;
+  font-size: 24px;
   margin: 0;
 }
 
@@ -212,7 +257,9 @@ header .navbar a:hover{
 
 .contacts {
   color: #ffffff;
-  font-size: large;
+  font-size:24px;
+  text-decoration: overline;
+  margin-left: 200px;
 }
 
 .contacts a {
