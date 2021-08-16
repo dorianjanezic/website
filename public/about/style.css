@@ -2,7 +2,13 @@
 
 CV: podobno kot ma https://matt-romein.com/cv
 meni lahko podoben kot na about strani
-kontakt je mailot */
+kontakt je mailot 
+
+-CV: sirsi DIV element
+
+-na manjsi resoluciji manjse
+
+*/
 
 @font-face {
   font-family: "biome";
@@ -37,7 +43,7 @@ html {
 }
 
 body{
-    background: black;
+    background: rgb(0, 0, 0);
     /* padding-left: 30rem; */
     overflow:hidden;
 }
@@ -170,7 +176,7 @@ header .navbar a:hover{
 
 .cv .education {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 2fr 2fr;
   margin-bottom: 50px;
 }
 
