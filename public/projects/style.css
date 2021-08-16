@@ -29,7 +29,14 @@ html {
 body{
     background: black;
     /* padding-left: 10rem; */
+    overflow: hidden;
+    background-image: url("winter-show1.jpg");
 }
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+
 section {
     padding: 1rem 2%;
     min-height: 100vh;
@@ -81,6 +88,7 @@ header .logo span {
     justify-content: space-between;
     border-bottom: 1px solid #fff;
     /* height: 140px; */
+    background: black;
 }
 
 
@@ -148,7 +156,25 @@ header .navbar a:hover{
     gap: 1.5rem;
 }
 
+.projects-main {
+    color: white;
+    padding-top: 200px;
+    text-align: center;
+    font-size: 4rem;
+    letter-spacing: 0.4rem;
+    z-index: 0;
+}
 
+h2 {
+    margin-bottom: 80px;
+}
+
+h2:hover {
+    cursor: pointer;
+}
+
+#chatnimal:hover {
+}
 
 @media (max-width:991px) {
     html {
