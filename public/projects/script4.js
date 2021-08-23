@@ -74,7 +74,7 @@ document.getElementById("city").addEventListener('mouseout', function () {
  document.getElementById('bg-image3').style.opacity = 0;
  document.getElementById('about').style.opacity = 1;
  document.getElementById('projects').style.opacity = 1;
- document.getElementById('about').style.opacity = 0.5;
+ document.getElementById('about').style.opacity = 1;
 })
 
 var prevScrollpos = window.pageYOffset;
