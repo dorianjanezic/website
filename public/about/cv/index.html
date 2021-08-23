@@ -26,16 +26,16 @@
         <nav class="navbar">
 
             <div class="main-nav">
-                <a href="/about" id="about">info</a>
-                <a href="/projects" id="projects">work</a>
+                <a onclick="document.location='/about'" id="aboutcv" >Dorian Janezic</a>
+                <a href="/projects" id="projectscv">work</a>
             </div>
         </nav>
     </header>
-    <div class="container">
+    <div class="containercv">
       <article class="cv">
 
         <section class="education">
-            <h1>Education</h1>
+            <h1 id="first">Education</h1>
             <div class="nyu">
                 <h3>New York University Master of Arts | class of 2021</h3>
             </div>
@@ -43,7 +43,7 @@
             <div class="nyu1">
                 <p>IMA Low Res (ITP Tisch School of the Arts and IMA NYU Shanghai)</p>
                 <p>2021 Tisch Graduate Research Fund Award</p>
-                <p>Recipient of funding as part of the IMA LowRes New Interfaces for Musical Expression (NIME) Club’s “International Soundboard of Tourism” project.</p>
+                <p>Recipient of funding as part of the IMA LowRes New Interfaces for Musical Expression (NIME) Club’s “International Soundboard of Tourism” project</p>
             </div>
 
             <h1></h1>
@@ -59,7 +59,7 @@
         </section>
 
       <section class="experience">
-          <h1>Work Experience</h1>
+          <h1 id="work-ex">Work Experience</h1>
           <div class="">
               <h3>SF Marine - Digital communication manager | 2018</h3>
           </div>
@@ -72,14 +72,14 @@
           <div>
               <h3>KRG - Marketing executive | 2019 & 2020</h3>
           </div>
-          <div class="">
+          <div class="krg">
             <p>Developing and implementing intuitive marketing strategies based on extensive research and analysis to evaluate trends</p>
           </div>
       </section>
 
 
       <section class="creative-tech">
-          <h1>Creative Technology</h1>
+          <h1 id="creative-tech">Creative Technology</h1>
 
           <div class="">
               <h3>ITP Spring Show - Biophonica | May 2021</h3>
@@ -93,15 +93,15 @@
           <div class="">
               <h3>ITP Winter Show - Chatimal | December 2020</h3>
           </div>
-          <div class="">
-            <p>Presented an interactive web browser chat application using HTML, CSS, Javascript, Node.Js and Sockets.io in collaboration with Christina Lan.</p>
+          <div class="chatimal">
+            <p>Presented an interactive web browser chat application using HTML, CSS, Javascript, Node.Js and Sockets.io in collaboration with Christina Lan</p>
           </div>
       </section>
 
       <section class="skills">
-          <h1>Skills</h1>
+          <h1 class="skills-1">Skills</h1>
           <div class="">
-              <h3>Creative Software</h3>
+              <h3 id="csoftware">Creative Software</h3>
           </div>
           <div class="software">
             <p>Sound | Ableton</p>
@@ -115,7 +115,7 @@
               <h3>Coding</h3>
           </div>
 
-          <div class="">
+          <div class="coding">
             <p>Web | JavaScript, Node.js, HTML, CSS, p5.js, Tone.js</p>
             <p>IoT | MQTT</p>
             <p>Physical computing | Arduino, ESP32</p>

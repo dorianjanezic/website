@@ -55,9 +55,14 @@ header {
 
 h1 {
     color: white;
+    font-size: 1.5rem;
 }
 h3 {
     color: white;
+}
+#first {
+    font-size: 1.5rem;
+    text-size-adjust: 1.5rem;
 }
 
 p {
@@ -126,19 +131,6 @@ header .navbar a:hover{
 
 #projects {
     margin: 4rem;
-}
-
-#menu-bars {
-    position: fixed;
-    top: 1rem; right: 1rem;
-    z-index: 10000;
-    background:transparent;
-    color: white;
-    border-radius: .5rem;
-    padding: 1rem 1.5rem;
-    font-size: 3rem;
-    cursor: pointer;
-    display: none;
 }
 
 .cv .nyu1 {

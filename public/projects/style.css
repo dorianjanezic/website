@@ -30,7 +30,6 @@ body{
     background: black;
     /* padding-left: 10rem; */
     overflow: hidden;
-    background-image: url("winter-show1.jpg");
 }
 
 body::-webkit-scrollbar {
@@ -43,20 +42,21 @@ section {
 }
 
 header {
-    position: fixed;
+    position: static;
     top: 0;
     left: 0;
     background: transparent;
     display: flex;
     align-items: end;
     justify-content: space-between;
-    z-index: 1000;
+    z-index: 101;
     flex-flow: column;
     width: 10rem;
     text-align: center;
     flex-direction: row;
     width: 100%;
     letter-spacing: 0.1rem;
+    opacity: 1;
 }
 
 header .logo{
@@ -64,6 +64,10 @@ header .logo{
     color:white;
     font-size: 10rem;
    
+}
+
+.header-main {
+    opacity: 1;
 }
 
 header .logo:hover {
@@ -77,8 +81,10 @@ header .logo span {
 
 .navbar {
     display: contents;
-
+    top: 0; /* Stay on top */
     justify-content: space-between;
+    transition: top 0.3s; 
+    background: transparent;
 }
 
 .main-nav {
@@ -86,9 +92,10 @@ header .logo span {
     position: absolute;
     width: 100%;
     justify-content: space-between;
-    border-bottom: 1px solid #fff;
+    /* border-bottom: 1px solid #fff; */
     /* height: 140px; */
-    background: black;
+    opacity: 1;
+    transition: opacity 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99);
 }
 
 
@@ -109,10 +116,12 @@ header .navbar a:hover{
 
 #about {
   margin: 65px 0 0 60px;
+  transform: scaleY(0.9);
 }
 
 #projects {
  margin: 65px 60px 0 0;
+ transform: scaleY(0.9);
 }
 
 #menu-bars {
@@ -158,7 +167,7 @@ header .navbar a:hover{
 
 .projects-main {
     color: white;
-    padding-top: 200px;
+    padding-top: 250px;
     text-align: center;
     font-size: 4rem;
     letter-spacing: 0.4rem;
@@ -166,6 +175,7 @@ header .navbar a:hover{
 }
 
 h2 {
+    margin: 0 430px;
     margin-bottom: 80px;
 }
 
@@ -173,7 +183,72 @@ h2:hover {
     cursor: pointer;
 }
 
-#chatnimal:hover {
+#bg-image {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    opacity: 0;
+    background-size: cover;
+    background-position: center;
+    pointer-events: none;
+    -webkit-transition: opacity 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+    transition: opacity 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+    background-image: url('winter-show1.jpg');
+}
+
+#bg-image1 {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    opacity: 0;
+    background-size: cover;
+    background-position: center;
+    pointer-events: none;
+    -webkit-transition: opacity 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+    transition: opacity 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+    background-image: url('biophonica.jpg');
+}
+
+#bg-image2 {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    opacity: 0;
+    background-size: cover;
+    background-position: center;
+    pointer-events: none;
+    -webkit-transition: opacity 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+    transition: opacity 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+    background-image: url('untold.png');
+}
+
+#bg-image3 {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    opacity: 0;
+    background-size: cover;
+    background-position: center;
+    pointer-events: none;
+    -webkit-transition: opacity 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+    transition: opacity 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+    background-image: url('freq.png');
 }
 
 @media (max-width:991px) {
@@ -182,10 +257,6 @@ h2:hover {
     }
      body {
          padding: 0;
-     }
-
-     #menu-bars {
-         display:initial;
      }
 
      /* header {
@@ -208,4 +279,22 @@ h2:hover {
     header {
         width: 100%;
     }
+
+    #about {
+        margin: 30px 0 20px 25px;
+      }
+  
+      #projects {
+        margin: 30px 25px 0 0;
+      }
+  
+      header .navbar a {
+        font-size: 30px;
+      }
+
+      .projects-main {
+        padding-top:200px;
+        margin: 10px 50px 50px 50px;
+        font-size: 18px;
+      }
 }

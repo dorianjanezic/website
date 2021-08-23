@@ -43,9 +43,10 @@ html {
 }
 
 body{
-    background: rgb(0, 0, 0);
+    background:black;
     /* padding-left: 30rem; */
     overflow:hidden;
+    overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -53,29 +54,56 @@ body::-webkit-scrollbar {
 }
 
 header {
-    position: fixed;
+    position: static;
     top: 0;
     left: 0;
     background: transparent;
     display: flex;
     align-items: end;
     justify-content: space-between;
-    z-index: 1000;
+    z-index:1000;
     flex-flow: column;
     width: 10rem;
     text-align: center;
     flex-direction: row;
     width: 100%;
-    border-bottom: 1px solid #fff;
+    /* border-bottom: 0.00001px solid #fff; */
     letter-spacing: 0.1rem;
 }
 
 #about {
   margin: 65px 0 0 60px;
+  transform: scaleY(0.9);
+}
+
+#about:hover {
+  cursor: pointer;
 }
 
 #projects {
   margin:65px 60px 0 0;
+  transform: scaleY(0.9);
+}
+
+#aboutcv {
+  margin: 65px 0 0 175px;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+#aboutcv:hover {
+  cursor: pointer;
+}
+
+#projectscv:hover {
+  cursor: pointer;
+}
+
+#projectscv {
+  margin: 65px 210px 0 0;
+  transform: scaleY(0.9);
+  font-size: 3rem;
+  font-weight: 600;
 }
 
 #home {
@@ -95,13 +123,16 @@ header {
 }
 
 
+
+
+
 .main-nav {
     display: flex;
     /*position: absolute;*/
     width: 100%;
     justify-content: space-between;
     /* height: 140px; */
-    background: #000000;
+    background: transparent;
 }
 
 
@@ -137,9 +168,12 @@ header .navbar a:hover{
 }
 
 .container {
-  width: 1140px;
+  /* width: 1140px; */
   margin: auto;
-  padding-top: 200px;
+}
+
+.containercv {
+  margin: auto;
 }
 
 
@@ -164,66 +198,71 @@ header .navbar a:hover{
 }
 
 .cv {
-  padding: 10px;
-  margin: 50px;
+  margin: 65px 200px 65px 180px;
   color: #ffffff;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
 }
 
 .cv .h1 {
-  text-decoration: overline;
+  text-decoration: overline 0.01px;
+  letter-spacing: 0.4rem;
 }
 
 .cv .education {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-columns: 1fr 2fr 3fr;
   margin-bottom: 50px;
+  border-bottom: solid 0.0001px;
 }
 
 .cv .creative-tech h1 {
-  text-decoration: overline;
+  text-decoration: overline solid 0.01px;
 }
 .cv .education h1 {
-  font-size: 2.5rem;
-  text-decoration: overline;
+  font-size: 2rem;
+  text-decoration: overline solid 0.01px;
 }
 
 .cv .experience h1 {
-  text-decoration: overline;
+  text-decoration: overline solid 0.01px;
+  font-size: 2rem;
 }
 
 .cv .skills h1 {
-  text-decoration: overline;
+  text-decoration: overline solid 0.01px;
+  font-size: 2rem;
 }
 
 .cv .experience {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 2fr 3fr;
   margin-bottom: 50px;
+  border-bottom: solid 0.01px;
 }
 
-.cv .experience h1 {
-  font-size: 2.5rem;
-}
 
 .cv .creative-tech {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 2fr 3fr;
   margin-bottom: 50px;
+  border-bottom: solid 0.000001px;
 }
 
 .cv .creative-tech h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .cv .skills {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 2fr 3fr;
   margin-bottom: 30px;
 }
 
+
 .cv .nyu1 {
   margin-bottom: 50px;
+  font-size: 1.17em;
 }
 
 .cv .nyu1 p {
@@ -234,26 +273,43 @@ header .navbar a:hover{
   margin-bottom: 20px;
 }
 
+.cv .ium1 {
+  font-size: 1.17em;
+}
+
+.cv .krg {
+  font-size: 1.17em;
+  margin-bottom: 20px;
+}
+
 .cv .sf {
   margin-bottom: 50px;
+  font-size: 1.17em;
 }
 
 .cv .biophonica {
   margin-bottom: 50px;
+  font-size: 1.17em;
+}
+
+.cv .chatimal {
+  font-size: 1.17em;
+  margin-bottom: 20px;
 }
 
 .cv .software {
   margin-bottom: 50px;
+  font-size: 1.17em;
 }
 
-.cv .skills h1 {
-  font-size: 2.5rem;
+.cv .coding {
+  font-size: 1.17em;
 }
 
 .description {
   color: white;
-  max-width: 80%;
-  font-size: 24px;
+  max-width: 65%;
+  font-size: 22px;
   margin: 0;
 }
 
@@ -263,29 +319,61 @@ header .navbar a:hover{
 
 .contacts {
   color: #ffffff;
-  font-size:24px;
-  text-decoration: overline;
-  margin-left: 200px;
+  font-size:28px;
+  text-decoration: overline 0.6px;
+  margin-left: 50%;
+  margin-top: 40%;
 }
 
 .contacts a {
   color: #ffffff;
 }
 
+#contact {
+  line-height: 3;
+}
+
 @media (max-width:991px) {
     html {
-        /* font-size: 55%; */
+        font-size: 70%;
     }
      body {
          padding: 0;
+         font-size: 15px;
      }
 
      .container {
        width: 100%;
      }
 
-     #home {
+     .main-nav {
+       font-size: 15px;
+     }
+    .about-page {
+      margin: 65px 150px 65px 120px;
+      font-size: 3px;
+    }
 
+     #about {
+       margin: 45px 0 0 20px;
+     }
+
+
+     #aboutcv {
+      margin: 45px 0 0 113px;
+      font-weight: 600;
+    }
+
+    #projectscv {
+      margin: 45px 140px 0 0;
+      font-weight: 600;
+    }
+     .description {
+       font-size: 21px;
+     }
+
+     #projects {
+       margin: 45px 20px 0 0;
      }
 
      #menu-bars {
@@ -299,6 +387,11 @@ header .navbar a:hover{
 
      header.active {
          left: 0%;
+     }
+
+     header .navbar a {
+       font-size: 4rem;
+       margin: 45px 0 0 20px;
      }
 
      .about-page, .cv .education, .cv .experience, .cv .creative-tech, .cv .skills {
@@ -316,15 +409,149 @@ header .navbar a:hover{
      .description {
        max-width: 100%;
      }
+
+     .contacts {
+       margin-left: 0;
+       margin-top: 0;
+       font-size: 24px;
+     }
+
+     .cv {
+      margin: 65px 150px 65px 120px;
+      font-size: 15px;
+     }
+
+     .cv #first {
+      padding-bottom: 30px;
+     }
+
+     .cv .nyu1 {
+      margin-bottom: 0;
+     }
+
+     .cv .nyu {
+       margin-right: 20px;
+     }
+     .cv #work-ex {
+       padding-bottom: 30px;
+     }
+
+     .cv .sf {
+       margin-bottom: 0;
+     }
+
+     .cv #creative-tech {
+       padding-bottom: 30px;
+     }
+
+     .cv .biophonica {
+       margin-bottom: 0;
+     }
+
+     .cv .csfotware {
+       margin-bottom: 30px;
+     }
+
+     .cv .software {
+       margin-bottom: 0;
+     }
+
+     .cv .skills-1 {
+       margin-bottom: 30px;
+     }
 }
 
 
 @media (max-width:450px) {
     html {
-        /* font-size: 50%; */
+        font-size: 50%;
     }
 
     header {
         width: 100%;
+        font-size: 10%;
+      }
+
+    .main-nav {
+      font-size: 1px;
     }
-}
+
+    .contacts {
+      margin-left: 0;
+      font-size: 16px;
+      align-items: center;
+    }
+
+    .description {
+      font-size: 16px;
+    }
+
+    .about-page {
+      margin: 10px 50px 50px 50px;
+    }
+
+    .cv {
+      margin: 10px 50px 50px 50px;
+      font-size: 12px;
+    }
+
+    #aboutcv {
+      margin: 45px 0 30px 46px;
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+
+    #projectscv {
+      margin: 45px 45px 0 0;
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+
+    .cv .nyu1 {
+      margin-bottom: 0;
+    }
+
+    .cv #first {
+      margin-bottom: 15px;
+    }
+
+    .cv .education {
+      margin-bottom: 30px;
+    }
+
+    .cv #work-ex {
+      margin-bottom: 15px;
+    }
+
+    .cv .sf {
+      margin-bottom: 0;
+    }
+
+    .cv .experience {
+      margin-bottom: 30px;
+    }
+
+    .cv .biophonica {
+      margin-bottom: 0;
+    }
+
+    .cv .creative-tech {
+      margin-bottom: 30px;
+    }
+
+    .cv .software {
+      margin-bottom: 0;
+    }
+
+    #about {
+      margin: 30px 0 20px 25px;
+    }
+
+    #projects {
+      margin: 30px 25px 0 0;
+    }
+
+    header .navbar a {
+      font-size: 30px;
+    }
+  }
