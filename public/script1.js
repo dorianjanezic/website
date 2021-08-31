@@ -5,7 +5,7 @@ let pointsx = [];
 let pointsy = [];
 let xvalues = [];
 let yvalues = [];
-sides = 3;
+sides = 1;
 let canvas; 
 
 let menu = document.querySelector('#menu-bars');
@@ -40,7 +40,7 @@ function setup() {
 
 
 
-  for (let i = 0; i < 500; i++) { //random point generator
+  for (let i = 0; i < 2; i++) { //random point generator
 
     cx = random(width * 0.20, width);
     cy = random(height * 0.20, height);
@@ -54,6 +54,7 @@ function setup() {
 
   for (let i = 0; i < sides; i++) {
     strokeWeight(10)
+    stroke(255)
 
 
     if (pointsy[i + 1] == undefined) {
@@ -92,8 +93,9 @@ function setup() {
 
 function draw() {
 
-  background(220);
+  background(0);
   strokeWeight(2);
+  stroke(255)
   line(width / 2, 0, width / 2, height);
 
 
@@ -103,7 +105,7 @@ function draw() {
 
   //explode line when clicked
   if (clicked >= 1) {
-    background(220);
+    background(0);
     for (let x = 0; x < pointbreak.length; x += 1) {
 
 
@@ -137,7 +139,7 @@ class Bubble {
     this.direction = direction;
 
     this.diameter = 1;
-    this.strokeC = 0;
+    this.strokeC = 255;
     this.strokeW = 3;
 
 

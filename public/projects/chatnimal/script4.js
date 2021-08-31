@@ -26,41 +26,11 @@
  */
  'use strict';
 
- function windowResized () {
-    resizeCanvas(windowWidth, windowHeight);
-  }
+function setup() {
+  createCanvas(windowWidth, windowHeight)
+}
 
- var img;
- var canvas;
- 
- function preload() {
-   img = loadImage('../assets/black_white.png');
- }
- 
- function setup() {
-    canvas = createCanvas(windowWidth, windowHeight);
-    canvas.position(0,0);
-    canvas.style('z-index', '-1');
-   image(img, 0, 0);
- }
- 
- function draw() {
-   var x1 = random(width);
-   var y1 = random(height);
- 
-   var x2 = round(x1 + map(mouseX, 0, width, -10, 10));
-   var y2 = round(y1 + map(mouseY, 0, width, -10, 10));
- 
-   var w = 150;
-   var h = 50;
- 
-   set(x2, y2, get(x1, y1, w, h));
- }
- 
- function keyReleased() {
-   if (key == 's' || key == 'S') saveCanvas(gd.timestamp(), 'png');
-   if (keyCode == DELETE || keyCode == BACKSPACE) {
-     clear();
-     image(img, 0, 0);
-   }
- }
+window.addEventListener('load', function () {
+  let about = document.getElementById('about')
+  about.style.opacity = map(mouseX(0, width, 0, 1))
+})

@@ -107,6 +107,8 @@ margin: 0;
 justify-content: space-between;
 flex-direction: row;
 justify-content: space-between;
+-webkit-transition: opacity 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+transition: opacity 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99);
 }
 
 header .navbar a:hover{
@@ -115,14 +117,63 @@ header .navbar a:hover{
 }
 
 #about {
-  margin: 65px 0 0 60px;
-  transform: scaleY(0.9);
-}
+  
+    position: relative;
+    margin: 65px 0 0 60px;
+    transform: scaleY(0.9);
+  }
+  
+  #about:hover {
+   
+    cursor: pointer;
+    /* background-color: rgb(107, 27, 27); */
+    /* border-bottom: 2px solid white; */
+    transition: 0.4s;
+  }
+  
+  #about::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(170, 46, 46);
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #about:hover:before {
+    visibility: visible;
+    width: 100%;
+  }
 
 #projects {
- margin: 65px 60px 0 0;
- transform: scaleY(0.9);
-}
+    position: relative;
+    margin:65px 60px 0 0;
+    transform: scaleY(0.9);
+  }
+  
+  #projects::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(170, 46, 46);
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #projects:hover:before {
+    visibility: visible;
+    width: 100%;
+  }
+  
+  #projects:hover {
+    transition: 0.4s;
+  }
 
 #menu-bars {
     position: fixed;
@@ -214,7 +265,7 @@ h2:hover {
     pointer-events: none;
     -webkit-transition: opacity 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99);
     transition: opacity 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99);
-    background-image: url('biophonica.jpg');
+    background-image: url('biophinic.png');
 }
 
 #bg-image2 {

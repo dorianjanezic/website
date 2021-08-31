@@ -40,6 +40,7 @@ html {
     overflow-x: hidden;
     scroll-behavior: smooth;
     display: block;
+    -webkit-text-size-adjust: 100%;
 }
 
 body{
@@ -72,31 +73,96 @@ header {
 }
 
 #about {
+  
+  position: relative;
   margin: 65px 0 0 60px;
-  transform: scaleY(0.9);
+  transform: scaleY(0.93);
 }
 
 #about:hover {
+ 
   cursor: pointer;
+  /* background-color: rgb(107, 27, 27); */
+  /* border-bottom: 2px solid white; */
+  transition: 0.4s;
+}
+
+#about::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(170, 46, 46);
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+#about:hover:before {
+  visibility: visible;
+  width: 100%;
 }
 
 #projects {
+  position: relative;
   margin:65px 60px 0 0;
-  transform: scaleY(0.9);
+  transform: scaleY(0.93);
+}
+
+#projects::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(170, 46, 46);
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+#projects:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
+#projects:hover {
+  transition: 0.4s;
 }
 
 #aboutcv {
+  position: relative;
   margin: 65px 0 0 175px;
   font-size: 3rem;
   font-weight: 600;
+  transform: scaleY(0.93);
 }
 
 #aboutcv:hover {
   cursor: pointer;
 }
 
+#aboutcv::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(170, 46, 46);
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+#aboutcv:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
 #projectscv:hover {
   cursor: pointer;
+  transition: 0.4s;
 }
 
 #projectscv {
@@ -104,6 +170,24 @@ header {
   transform: scaleY(0.9);
   font-size: 3rem;
   font-weight: 600;
+  position: relative;
+}
+
+#projectscv::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(170, 46, 46);
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+#projectscv:hover:before {
+  visibility: visible;
+  width: 100%;
 }
 
 #home {
@@ -421,9 +505,7 @@ header .navbar a:hover{
       font-size: 15px;
      }
 
-     .cv #first {
-      padding-bottom: 30px;
-     }
+
 
      .cv .nyu1 {
       margin-bottom: 0;
@@ -432,24 +514,13 @@ header .navbar a:hover{
      .cv .nyu {
        margin-right: 20px;
      }
-     .cv #work-ex {
-       padding-bottom: 30px;
-     }
 
      .cv .sf {
        margin-bottom: 0;
      }
 
-     .cv #creative-tech {
-       padding-bottom: 30px;
-     }
-
      .cv .biophonica {
        margin-bottom: 0;
-     }
-
-     .cv .csfotware {
-       margin-bottom: 30px;
      }
 
      .cv .software {
@@ -495,6 +566,10 @@ header .navbar a:hover{
       font-size: 12px;
     }
 
+    .main-nav {
+      font-size: 13px;
+    }
+
     #aboutcv {
       margin: 45px 0 30px 46px;
       font-size: 2.5rem;
@@ -512,7 +587,7 @@ header .navbar a:hover{
     }
 
     .cv #first {
-      margin-bottom: 15px;
+      margin-bottom: 25px;
     }
 
     .cv .education {
@@ -520,7 +595,11 @@ header .navbar a:hover{
     }
 
     .cv #work-ex {
-      margin-bottom: 15px;
+      margin-bottom: 25px;
+    }
+
+    .cv #creative-tech {
+      margin-bottom:25px;
     }
 
     .cv .sf {

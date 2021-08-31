@@ -102,14 +102,63 @@ header .navbar a:hover{
 }
 
 #about {
-  margin: 65px 0 0 60px;
-  transform: scaleY(0.9);
-}
+  
+    position: relative;
+    margin: 65px 0 0 60px;
+    transform: scaleY(0.93);
+  }
+  
+  #about:hover {
+   
+    cursor: pointer;
+    /* background-color: rgb(107, 27, 27); */
+    /* border-bottom: 2px solid white; */
+    transition: 0.4s;
+  }
+  
+  #about::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(170, 46, 46);
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #about:hover:before {
+    visibility: visible;
+    width: 100%;
+  }
 
 #projects {
- margin: 65px 60px 0 0;
- transform: scaleY(0.9);
-}
+    position: relative;
+    margin:65px 60px 0 0;
+    transform: scaleY(0.93);
+  }
+  
+  #projects::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(170, 46, 46);
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #projects:hover:before {
+    visibility: visible;
+    width: 100%;
+  }
+  
+  #projects:hover {
+    transition: 0.4s;
+  }
 
 #menu-bars {
     position: fixed;
@@ -152,6 +201,19 @@ header .navbar a:hover{
     gap: 1.5rem;
 }
 
+#description {
+    width: 45%;
+    font-size: 2rem;
+    color: white;
+}
+
+.home-page {
+    margin: auto;
+    color: white;
+    margin: 65px;
+    padding-top: 300px;
+}
+
 
 
 @media (max-width:991px) {
@@ -162,18 +224,25 @@ header .navbar a:hover{
          padding: 0;
      }
 
-     #menu-bars {
-         display:initial;
-     }
-
-     /* header {
-        left: -100%;
-        padding: auto;
-     } */
-
      header.active {
          left: 0%;
      }
+
+     .main-nav {
+        font-size: 15px;
+      }
+     .about-page {
+       margin: 65px 150px 65px 120px;
+       font-size: 3px;
+     }
+ 
+      #about {
+        margin: 45px 0 0 20px;
+      }
+
+      #projects {
+        margin: 45px 20px 0 0;
+      }
 }
 
 
@@ -186,4 +255,16 @@ header .navbar a:hover{
     header {
         width: 100%;
     }
+
+    #about {
+        margin: 30px 0 20px 25px;
+      }
+  
+      #projects {
+        margin: 30px 25px 0 0;
+      }
+
+      header .navbar a {
+        font-size: 30px;
+      }
 }
