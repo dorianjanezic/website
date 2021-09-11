@@ -19,19 +19,20 @@ function draw() {
 
 positionx = map(mouseX, 0, width/2, 400, 0)
 
-  fill(0)
-  stroke(200)
-  for (let x1 = width/5; x1 < width*4/5; x1 += 0.01) {
+  fill(255)
+  stroke(100)
+  for (let x1 = 400; x1 < width-400; x1 += 0.01) {
     triangle(x1, 0, mouseX+positionx, mouseY, x1 +=8, 0);
-    // triangle(x1, height, mouseX-positionx, mouseY, x1 += 8, height);
+    triangle(x1, height, mouseX-positionx, mouseY-10, x1 += 8, height);
   }
 
-  for (let x1 = width/5; x1 < width*4/5; x1 += 3) {
-    triangle(x1, height, mouseX-positionx, mouseY, x1 += 8, height);
+  for (y1 = 0; y1 < height; y1 += 1) {
+    // triangle(0, y1, mouseX, mouseY, 0, y1 += 50)
+    // triangle(width, y1, mouseX, mouseY, width, y1 += 50)
   }
   noStroke()
-fill(255)
-  square(mouseX, mouseY, 8)
+fill(200)
+  square(mouseX-4, mouseY+4, 8)
 
 //   //inner circle (not moving)
 //   noStroke()

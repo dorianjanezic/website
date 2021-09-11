@@ -1,13 +1,14 @@
 let outerD = 50;
-let speed = 0.3;
+let speed = 0.5;
 let x2,y2;
-
+let growspeed = 0.3;
 
 //global variables
 let button;
 let canvas;
 var mic;
 let anglea, beta, gamma;
+let effects = [];
 
 //load font
 // let myFont;
@@ -18,6 +19,7 @@ let anglea, beta, gamma;
 function windowResized () {
   resizeCanvas(windowWidth, windowHeight);
 }
+document.body.style.cursor = 'none';
 
 
 function setup() {
@@ -44,7 +46,7 @@ function draw() {
   //inner circle (not moving)
   noStroke()
   fill(220)
-  circle(mouseX, mouseY, 50)
+  circle(mouseX, mouseY, 30)
 
   //outer circle #1 (moving)
   strokeWeight(20)
@@ -61,31 +63,32 @@ function draw() {
   strokeWeight(20)
   stroke(230)
   noFill()
-  circle(mouseX, mouseY, outerD + 200)
+  circle(mouseX, mouseY, outerD + 60)
 
   strokeWeight(15)
   stroke(150,200)
   noFill()
-  circle(mouseX, mouseY, outerD + 230)
+  circle(mouseX, mouseY, outerD + 90)
 
   //outer circle #3 (moving)
   strokeWeight(25)
   stroke(180)
   noFill()
-  circle(mouseX, mouseY, outerD + 300)
+  circle(mouseX, mouseY, outerD + 120)
 
   strokeWeight(30)
   stroke(200,220)
   noFill()
-  circle(mouseX, mouseY, outerD + 330)
+  circle(mouseX, mouseY, outerD + 150)
 
 
  outerD -= speed;
   
   if (outerD + 430 < 10) {
     speed *= 0.3;
-    outerD = 60;
+    outerD = 260;
   }
+
 
 };
 
@@ -98,3 +101,5 @@ function mouseClicked () {
       //   //outerD = 250;   
       // }
     
+
+

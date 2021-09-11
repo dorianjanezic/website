@@ -17,7 +17,7 @@
     text-decoration: none;
     /* text-transform: capitalize; */
     /* transition: all .2s linear; */
-    line-height: 1.5;
+    /* line-height: 1.5; */
 }
 
 html {
@@ -29,7 +29,7 @@ html {
 body{
     background: black;
     /* padding-left: 10rem; */
-    background: transparent;
+    /* background: transparent; */
     -webkit-font-smoothing: antialiased;
 }
 section {
@@ -45,13 +45,12 @@ header {
     display: flex;
     align-items: end;
     justify-content: space-between;
-    z-index: 1000;
+    /* z-index: 1000; */
     flex-flow: column;
     width: 10rem;
     text-align: center;
     flex-direction: row;
     width: 100%;
-    letter-spacing: 0.1rem;
 }
 
 header .logo{
@@ -71,7 +70,7 @@ header .logo span {
 }
 
 .navbar {
-    display: contents;
+    /* display: contents; */
 
     justify-content: space-between;
 }
@@ -83,6 +82,7 @@ header .logo span {
     justify-content: space-between;
     /* border-bottom: 1px solid #fff; */
     /* height: 140px; */
+    
 }
 
 
@@ -102,15 +102,16 @@ header .navbar a:hover{
 }
 
 #about {
-  
+    font-size: 5rem;
     position: relative;
     margin: 65px 0 0 60px;
     transform: scaleY(0.93);
+   visibility: hidden;
   }
   
   #about:hover {
    
-    cursor: pointer;
+    /* cursor: pointer; */
     /* background-color: rgb(107, 27, 27); */
     /* border-bottom: 2px solid white; */
     transition: 0.4s;
@@ -137,8 +138,41 @@ header .navbar a:hover{
     position: relative;
     margin:65px 60px 0 0;
     transform: scaleY(0.93);
+    letter-spacing: 0.1rem;
+    cursor: none;
   }
-  
+
+  #dorian-j {
+    position: relative;
+    transform: scaleY(0.43);
+    font-size: 7rem;
+
+    /* letter-spacing: 0.3rem; */
+  }
+  #dorian-j:hover {
+    /* cursor: pointer; */
+    /* background-color: rgb(107, 27, 27); */
+    /* border-bottom: 2px solid white; */
+    transition: 0.4s;
+  }
+
+  #dorian-j::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(170, 46, 46);
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+
+  #dorian-j:hover:before {
+    visibility: visible;
+    width: 100%;
+  }
+
   #projects::before {
     content: "";
     position: absolute;
@@ -150,14 +184,14 @@ header .navbar a:hover{
     visibility: hidden;
     transition: all 0.3s ease-in-out;
   }
+
+  #projects:hover {
+    cursor:none;
+  }
   
   #projects:hover:before {
     visibility: visible;
     width: 100%;
-  }
-  
-  #projects:hover {
-    transition: 0.4s;
   }
 
 #menu-bars {
@@ -169,7 +203,7 @@ header .navbar a:hover{
     border-radius: .5rem;
     padding: 1rem 1.5rem;
     font-size: 3rem;
-    cursor: pointer;
+    /* cursor: pointer; */
     display: none;
 }
 
@@ -183,6 +217,7 @@ header .navbar a:hover{
     z-index: 10000;
 }
 
+
 .cursor-2 {
     position: absolute;
     top: 0; left: 0;
@@ -194,11 +229,18 @@ header .navbar a:hover{
     transition: .3s linear;
 }
 
-.home {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1.5rem;
+.intro-text {
+  color: white;
+  /* padding-top: 130px; */
+  font-size: 5rem;
+  width: 45%;
+  
+  margin: 76px 0 0 60px;
+  transform: scaleY(0.93);
+  opacity: 10000;
+  transform: scaleY(0.93);
+  line-height: 0.7;
+
 }
 
 #description {
@@ -212,6 +254,17 @@ header .navbar a:hover{
     color: white;
     margin: 65px;
     padding-top: 300px;
+}
+
+.contacts {
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 1%;
+  font-size: 1.5em;
+  float: right;
+  color: rgba(177, 177, 177, 0.6);
+  padding-right: 60px;
+  right:0;
 }
 
 
@@ -243,6 +296,10 @@ header .navbar a:hover{
       #projects {
         margin: 45px 20px 0 0;
       }
+
+      .intro-text {
+        margin: 40px 0 0 20px;
+      }
 }
 
 
@@ -257,14 +314,22 @@ header .navbar a:hover{
     }
 
     #about {
-        margin: 30px 0 20px 25px;
+        margin: 25px 0 20px 25px;
       }
   
       #projects {
-        margin: 30px 25px 0 0;
+        margin: 25px 25px 0 0;
       }
 
       header .navbar a {
         font-size: 30px;
+      }
+
+      .intro-text {
+        margin: 15px 0 0 25px;
+      }
+
+      #dorian-j {
+        font-size: 6rem;
       }
 }

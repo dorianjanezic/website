@@ -1,22 +1,4 @@
- 'use strict';
-
- function windowResized () {
-    resizeCanvas(windowWidth, windowHeight);
-  }
-
- var img;
- var canvas;
- 
- function preload() {
-   img = loadImage('../assets/black_white.png');
- }
- 
- function setup() {
-    canvas = createCanvas(windowWidth, windowHeight);
-    canvas.position(0,0);
-    canvas.style('z-index', '-1');
- }
- 
+ 'use strict'; 
 
  function setImage () {
 
@@ -31,18 +13,30 @@
      document.getElementById('bg-image').style.opacity = 1;
      document.getElementById('about').style.opacity = -1;
      document.getElementById('projects').style.opacity = -1;
+     document.getElementById('biophonica').style.opacity = -1;
+     document.getElementById('untold-town').style.opacity = -1;
+     document.getElementById('city').style.opacity = -1;
+     document.getElementById("chatnimal").style.opacity = 0.4;
    })
 
    document.getElementById("chatnimal").addEventListener('mouseout', function () {
     document.getElementById('bg-image').style.opacity = 0;
     document.getElementById('about').style.opacity = 1;
     document.getElementById('projects').style.opacity = 1;
+    document.getElementById('biophonica').style.opacity = 1;
+    document.getElementById('untold-town').style.opacity = 1;
+    document.getElementById('city').style.opacity = 1;
+    document.getElementById("chatnimal").style.opacity = 1;
   })
 
   document.getElementById("biophonica").addEventListener('mouseover', function () {
     document.getElementById('bg-image1').style.opacity = 1;
     document.getElementById('about').style.opacity = -1;
     document.getElementById('projects').style.opacity = -1;
+    document.getElementById('chatnimal').style.opacity = -1;
+    document.getElementById('untold-town').style.opacity = -1;
+    document.getElementById('city').style.opacity = -1;
+    document.getElementById("biophonica").style.opacity = 0.4;
 
   })
 
@@ -50,24 +44,42 @@
    document.getElementById('bg-image1').style.opacity = 0;
    document.getElementById('about').style.opacity = 1;
    document.getElementById('projects').style.opacity = 1;
+   document.getElementById('chatnimal').style.opacity = 1;
+   document.getElementById('untold-town').style.opacity = 1;
+   document.getElementById('city').style.opacity = 1;
+   document.getElementById("biophonica").style.opacity = 1;
+
  })
 
  document.getElementById("untold-town").addEventListener('mouseover', function () {
   document.getElementById('bg-image2').style.opacity = 1;
   document.getElementById('about').style.opacity = -1;
   document.getElementById('projects').style.opacity = -1;
+      document.getElementById('biophonica').style.opacity = -1;
+    document.getElementById('chatnimal').style.opacity = -1;
+    document.getElementById('city').style.opacity = -1;
+    document.getElementById("untold-town").style.opacity = 0.5;
+    
 })
 
 document.getElementById("untold-town").addEventListener('mouseout', function () {
  document.getElementById('bg-image2').style.opacity = 0;
  document.getElementById('about').style.opacity = 1;
  document.getElementById('projects').style.opacity = 1;
+ document.getElementById('biophonica').style.opacity = 1;
+ document.getElementById('chatnimal').style.opacity = 1;
+ document.getElementById('city').style.opacity = 1;
+ document.getElementById("untold-town").style.opacity = 1;
 })
 
 document.getElementById("city").addEventListener('mouseover', function () {
   document.getElementById('bg-image3').style.opacity = 1;
   document.getElementById('about').style.opacity = -1;
   document.getElementById('projects').style.opacity = -1;
+  document.getElementById('biophonica').style.opacity = -1;
+  document.getElementById('untold-town').style.opacity = -1;
+  document.getElementById('chatnimal').style.opacity = -1;
+  document.getElementById("city").style.opacity = 0.8;
 })
 
 document.getElementById("city").addEventListener('mouseout', function () {
@@ -75,6 +87,10 @@ document.getElementById("city").addEventListener('mouseout', function () {
  document.getElementById('about').style.opacity = 1;
  document.getElementById('projects').style.opacity = 1;
  document.getElementById('about').style.opacity = 1;
+ document.getElementById('biophonica').style.opacity = 1;
+ document.getElementById('untold-town').style.opacity = 1;
+ document.getElementById('chatnimal').style.opacity = 1;
+ document.getElementById("city").style.opacity = 1;
 })
 
 var prevScrollpos = window.pageYOffset;

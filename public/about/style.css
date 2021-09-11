@@ -28,7 +28,7 @@ kontakt je mailot
     outline: none; border: none;
     text-decoration: none;
     /* transition: all .2s; */
-    line-height: 1.5;
+    /* line-height: 1.5; */
 }
 
 .section {
@@ -41,6 +41,7 @@ html {
     scroll-behavior: smooth;
     display: block;
     -webkit-text-size-adjust: 100%;
+    
 }
 
 body{
@@ -108,6 +109,7 @@ header {
   position: relative;
   margin:65px 60px 0 0;
   transform: scaleY(0.93);
+  /* line-height: 1.5; */
 }
 
 #projects::before {
@@ -129,11 +131,12 @@ header {
 
 #projects:hover {
   transition: 0.4s;
+  cursor: pointer;
 }
 
 #aboutcv {
   position: relative;
-  margin: 65px 0 0 175px;
+  margin: 65px 0 0 100px;
   font-size: 3rem;
   font-weight: 600;
   transform: scaleY(0.93);
@@ -166,7 +169,7 @@ header {
 }
 
 #projectscv {
-  margin: 65px 210px 0 0;
+  margin: 65px 100px 0 0;
   transform: scaleY(0.9);
   font-size: 3rem;
   font-weight: 600;
@@ -204,6 +207,7 @@ header {
 .navbar {
     display: contents;
     justify-content: space-between;
+    
 }
 
 
@@ -254,6 +258,7 @@ header .navbar a:hover{
 .container {
   /* width: 1140px; */
   margin: auto;
+  line-height: 1.5;
 }
 
 .containercv {
@@ -275,16 +280,16 @@ header .navbar a:hover{
 }
 
 .about-page {
-   padding: 10px;
    display: grid;
    grid-template-columns: repeat(2, 1fr);
-   margin: 50px;
+   margin: 60px;
+   margin-top: 40px;
 }
 
 .cv {
-  margin: 65px 200px 65px 180px;
+  margin: 65px 100px 65px 105px;
   color: #ffffff;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   letter-spacing: 0.1rem;
 }
 
@@ -304,18 +309,18 @@ header .navbar a:hover{
   text-decoration: overline solid 0.01px;
 }
 .cv .education h1 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-decoration: overline solid 0.01px;
 }
 
 .cv .experience h1 {
   text-decoration: overline solid 0.01px;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .cv .skills h1 {
   text-decoration: overline solid 0.01px;
-  font-size: 2rem;
+  /* font-size: 1.8rem; */
 }
 
 .cv .experience {
@@ -334,7 +339,7 @@ header .navbar a:hover{
 }
 
 .cv .creative-tech h1 {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .cv .skills {
@@ -346,7 +351,6 @@ header .navbar a:hover{
 
 .cv .nyu1 {
   margin-bottom: 50px;
-  font-size: 1.17em;
 }
 
 .cv .nyu1 p {
@@ -358,42 +362,32 @@ header .navbar a:hover{
 }
 
 .cv .ium1 {
-  font-size: 1.17em;
 }
 
 .cv .krg {
-  font-size: 1.17em;
   margin-bottom: 20px;
 }
 
 .cv .sf {
   margin-bottom: 50px;
-  font-size: 1.17em;
 }
 
 .cv .biophonica {
   margin-bottom: 50px;
-  font-size: 1.17em;
 }
 
 .cv .chatimal {
-  font-size: 1.17em;
   margin-bottom: 20px;
 }
 
 .cv .software {
   margin-bottom: 50px;
-  font-size: 1.17em;
-}
-
-.cv .coding {
-  font-size: 1.17em;
 }
 
 .description {
   color: white;
   max-width: 65%;
-  font-size: 22px;
+  font-size: 1.9rem;
   margin: 0;
 }
 
@@ -403,14 +397,15 @@ header .navbar a:hover{
 
 .contacts {
   color: #ffffff;
-  font-size:28px;
-  text-decoration: overline 0.6px;
+  font-size:2.5rem;
+  text-decoration: overline 1px rgb(170, 46, 46);
   margin-left: 50%;
-  margin-top: 40%;
+  margin-top: 30%;
 }
 
 .contacts a {
   color: #ffffff;
+  text-decoration: overline 1px rgb(170, 46, 46);
 }
 
 #contact {
@@ -434,12 +429,16 @@ header .navbar a:hover{
        font-size: 15px;
      }
     .about-page {
-      margin: 65px 150px 65px 120px;
+      margin: 40px;
       font-size: 3px;
+      padding:0;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      padding-top: 80px;
     }
 
      #about {
-       margin: 45px 0 0 20px;
+       margin: 45px 0 0 40px;
      }
 
 
@@ -453,11 +452,12 @@ header .navbar a:hover{
       font-weight: 600;
     }
      .description {
-       font-size: 21px;
+       font-size: 17px;
+       width:75%;
      }
 
      #projects {
-       margin: 45px 20px 0 0;
+       margin: 45px 40px 0 0;
      }
 
      #menu-bars {
@@ -474,11 +474,11 @@ header .navbar a:hover{
      }
 
      header .navbar a {
-       font-size: 4rem;
+       font-size: 5rem;
        margin: 45px 0 0 20px;
      }
 
-     .about-page, .cv .education, .cv .experience, .cv .creative-tech, .cv .skills {
+    .cv .education, .cv .experience, .cv .creative-tech, .cv .skills {
        grid-template-columns: repeat(1, 1fr);
      }
 
@@ -488,16 +488,13 @@ header .navbar a:hover{
 
      .cv .education, .cv .experience, .cv .creative-tech, .cv .skills {
        grid-row-gap: 10px;
-     }
-
-     .description {
-       max-width: 100%;
+       margin-bottom: 20px;
      }
 
      .contacts {
-       margin-left: 0;
-       margin-top: 0;
-       font-size: 24px;
+       margin-left: 80px;
+       margin-top: 200px;
+       font-size: 17px;
      }
 
      .cv {
@@ -528,7 +525,7 @@ header .navbar a:hover{
      }
 
      .cv .skills-1 {
-       margin-bottom: 30px;
+       margin-bottom: px;
      }
 }
 
@@ -551,19 +548,26 @@ header .navbar a:hover{
       margin-left: 0;
       font-size: 16px;
       align-items: center;
+      padding-top: 0;
+      margin-top: 0;
     }
 
     .description {
       font-size: 16px;
+      width: 100%;
+      max-width: 100%;
     }
 
     .about-page {
-      margin: 10px 50px 50px 50px;
+      display: flex;
+      flex-direction: column;
+      margin: 10px 70px 20px 80px;
+      padding-top: 20px;
     }
 
     .cv {
       margin: 10px 50px 50px 50px;
-      font-size: 12px;
+      font-size: 14px;
     }
 
     .main-nav {
@@ -588,6 +592,7 @@ header .navbar a:hover{
 
     .cv #first {
       margin-bottom: 25px;
+      font-size: 2rem;
     }
 
     .cv .education {
@@ -596,10 +601,16 @@ header .navbar a:hover{
 
     .cv #work-ex {
       margin-bottom: 25px;
+      font-size: 2rem;
     }
 
     .cv #creative-tech {
       margin-bottom:25px;
+      font-size: 2rem;
+    }
+
+    .cv .skills-1 {
+      font-size: 2rem;
     }
 
     .cv .sf {
@@ -623,11 +634,11 @@ header .navbar a:hover{
     }
 
     #about {
-      margin: 30px 0 20px 25px;
+      margin: 25px 0 20px 25px;
     }
 
     #projects {
-      margin: 30px 25px 0 0;
+      margin: 25px 25px 0 0;
     }
 
     header .navbar a {

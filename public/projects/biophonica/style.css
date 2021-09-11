@@ -46,7 +46,7 @@ section {
 }
 
 header {
-    position: fixed;
+    position: static;
     top: 0;
     left: 0;
     background: transparent;
@@ -80,25 +80,25 @@ header .logo span {
 }
 
 .navbar {
-    display: contents;
+    /* display: contents; */
 
     justify-content: space-between;
 }
 
 .main-nav {
     display: flex;
-    position: absolute;
+    position: fixed;
     width: 100%;
     justify-content: space-between;
-    border-bottom: 1px solid #fff;
+   
     /* height: 140px; */
-    background: #000000;
+    background: transparent;
 }
 
 
 header .navbar a{
 /* float: left; */
-font-size: 7rem;
+font-size: 5rem;
 color: white;
 margin: 0;
 justify-content: space-between;
@@ -113,13 +113,62 @@ header .navbar a:hover{
 
 #about {
   margin: 65px 0 0 60px;
-  transform: scaleY(0.9);
+  transform: scaleY(0.93);
+  opacity: 1;
+  position: relative;
 }
+
+#about:hover {
+   
+    cursor: pointer;
+    /* background-color: rgb(107, 27, 27); */
+    /* border-bottom: 2px solid white; */
+    transition: 0.4s;
+  }
+  
+  #about::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #about:hover:before {
+    visibility: visible;
+    width: 100%;
+  }
 
 #projects {
  margin: 65px 60px 0 0;
- transform: scaleY(0.9);
+ transform: scaleY(0.93);
+ position: relative;
 }
+
+#projects::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #projects:hover:before {
+    visibility: visible;
+    width: 100%;
+  }
+  
+  #projects:hover {
+    transition: 0.4s;
+  }
 
 #menu-bars {
     position: fixed;
@@ -172,13 +221,13 @@ header .navbar a:hover{
 
 .container {
     margin: auto;
-    padding-top: 100px;
+    padding-top: 200px;
     color: white;
     margin: 65px;
 }
 
 #title {
-    font-size: 6rem;
+    font-size: 5rem;
     padding-bottom: 50px;
     letter-spacing: 0.4rem;
     text-align: center;
@@ -204,19 +253,19 @@ header .navbar a:hover{
 
 #winter-show {
     padding-bottom: 70px;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 
 #video {
     padding-bottom: 20px;
     width: 80%;
-    height: 80vh;
+    height: 0vh;
 }
 
 .video-container {
     width: 100%;
-    height: 30vh;
+    height: 0vh;
 }
 
 
@@ -293,11 +342,11 @@ header .navbar a:hover{
     }
 
     #about {
-        margin: 30px 0 20px 25px;
+        margin: 25px 0 20px 25px;
       }
   
       #projects {
-        margin: 30px 25px 0 0;
+        margin: 25px 25px 0 0;
       }
   
       header .navbar a {
