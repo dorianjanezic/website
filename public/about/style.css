@@ -644,4 +644,49 @@ header .navbar a:hover{
     header .navbar a {
       font-size: 30px;
     }
+
+    .cv .bolder {
+      text-decoration: none;
+      padding-bottom: 20px;
+    }
+
+    .cv #nyu111 {
+      text-decoration: none;
+      padding-bottom: 20px;
+    }
+
+    .cv #ium111 {
+      text-decoration: none;
+      padding-bottom: 20px;
+    }
+
+    .cv #sf111 {
+      text-decoration: none;
+      padding-bottom: 20px;
+    }
+
+    .cv #krg111 {
+      text-decoration: none;
+      padding-bottom: 20px;
+    }
+
+    .cv #spring111 {
+      text-decoration: none;
+      padding-bottom: 20px;
+    }
+
+    .cv #winter111 {
+      text-decoration: none;
+      padding-bottom: 20px;
+    }
+
+    .cv #csoftware {
+      text-decoration: none;
+      padding-bottom: 20px;
+    }
+
+    .cv #coding111 {
+      text-decoration: none;
+      padding-bottom: 20px;
+    }
   }
