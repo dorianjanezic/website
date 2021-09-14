@@ -78,11 +78,12 @@ header {
   position: relative;
   margin: 65px 0 0 60px;
   transform: scaleY(0.93);
+  cursor: none;
 }
 
 #about:hover {
  
-  cursor: pointer;
+  cursor: none;
   /* background-color: rgb(107, 27, 27); */
   /* border-bottom: 2px solid white; */
   transition: 0.4s;
@@ -110,6 +111,7 @@ header {
   margin:65px 60px 0 0;
   transform: scaleY(0.93);
   /* line-height: 1.5; */
+  cursor: none;
 }
 
 #projects::before {
@@ -131,7 +133,7 @@ header {
 
 #projects:hover {
   transition: 0.4s;
-  cursor: pointer;
+  cursor: none;
 }
 
 #aboutcv {
@@ -305,20 +307,20 @@ header .navbar a:hover{
   border-bottom: solid 0.0001px;
 }
 
-.cv .creative-tech h1 {
+.cv .creative-tech #creative-tech {
   text-decoration: overline solid 0.01px;
 }
-.cv .education h1 {
+.cv .education #first {
   font-size: 1.8rem;
   text-decoration: overline solid 0.01px;
 }
 
-.cv .experience h1 {
+.cv .experience #work-ex {
   text-decoration: overline solid 0.01px;
   font-size: 1.8rem;
 }
 
-.cv .skills h1 {
+.cv .skills .skills-1 {
   text-decoration: overline solid 0.01px;
   /* font-size: 1.8rem; */
 }
@@ -357,11 +359,28 @@ header .navbar a:hover{
   margin-bottom: 20px;
 }
 
+.cv .ium1 {
+  margin-bottom: 20px;
+}
+
+.cv .sf p {
+  margin-bottom: 20px;
+}
+
+.cv .krg p {
+  margin-bottom: 20px;
+}
+
+.cv .software p {
+  margin-bottom: 20px;
+}
+
 .cv .ium1 p {
   margin-bottom: 20px;
 }
 
-.cv .ium1 {
+.cv .coding p {
+  margin-bottom: 20px;
 }
 
 .cv .krg {
@@ -377,7 +396,7 @@ header .navbar a:hover{
 }
 
 .cv .chatimal {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .cv .software {
@@ -546,23 +565,26 @@ header .navbar a:hover{
 
     .contacts {
       margin-left: 0;
-      font-size: 16px;
+      font-size: 20px;
       align-items: center;
       padding-top: 0;
-      margin-top: 0;
+      margin-top: 30px;
+      text-align: center;
     }
 
     .description {
       font-size: 16px;
       width: 100%;
       max-width: 100%;
+      text-align: center;
     }
 
     .about-page {
       display: flex;
-      flex-direction: column;
+      flex-direction: column-reverse;
       margin: 10px 70px 20px 80px;
-      padding-top: 20px;
+      margin: 0px 50px 20px 50px;
+      padding-top:0;
     }
 
     .cv {

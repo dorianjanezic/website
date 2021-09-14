@@ -16,7 +16,7 @@
      document.getElementById('biophonica').style.opacity = -1;
      document.getElementById('untold-town').style.opacity = -1;
      document.getElementById('city').style.opacity = -1;
-     document.getElementById("chatnimal").style.opacity = 0.4;
+     document.getElementById("chatnimal").style.opacity = 0.8;
    })
 
    document.getElementById("chatnimal").addEventListener('mouseout', function () {
@@ -36,7 +36,7 @@
     document.getElementById('chatnimal').style.opacity = -1;
     document.getElementById('untold-town').style.opacity = -1;
     document.getElementById('city').style.opacity = -1;
-    document.getElementById("biophonica").style.opacity = 0.4;
+    document.getElementById("biophonica").style.opacity = 0.8;
 
   })
 
@@ -58,7 +58,7 @@
       document.getElementById('biophonica').style.opacity = -1;
     document.getElementById('chatnimal').style.opacity = -1;
     document.getElementById('city').style.opacity = -1;
-    document.getElementById("untold-town").style.opacity = 0.5;
+    document.getElementById("untold-town").style.opacity = 0.8;
     
 })
 

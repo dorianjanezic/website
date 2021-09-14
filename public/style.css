@@ -146,6 +146,7 @@ header .navbar a:hover{
     position: relative;
     transform: scaleY(0.43);
     font-size: 7rem;
+    line-height: 0.55;
 
     /* letter-spacing: 0.3rem; */
   }
@@ -307,6 +308,14 @@ header .navbar a:hover{
     html {
         font-size: 50%;
 
+    }
+
+    #about:hover:before {
+      visibility: hidden;
+    }
+    
+      #projects:hover:before {
+      visibility: hidden;
     }
 
     header {
