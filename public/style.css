@@ -147,7 +147,8 @@ header .navbar a:hover{
     transform: scaleY(0.43);
     font-size: 7rem;
     line-height: 0.55;
-
+    
+    
     /* letter-spacing: 0.3rem; */
   }
   #dorian-j:hover {
@@ -172,6 +173,10 @@ header .navbar a:hover{
   #dorian-j:hover:before {
     visibility: visible;
     width: 100%;
+  }
+
+  #txttt {
+    
   }
 
   #projects::before {
@@ -238,7 +243,6 @@ header .navbar a:hover{
   
   margin: 76px 0 0 60px;
   transform: scaleY(0.93);
-  opacity: 10000;
   transform: scaleY(0.93);
   line-height: 0.7;
 

@@ -59,8 +59,9 @@ function draw() {
   if (outerD + 430 < 150) {
     speed *= -1;
     // outerD = width;
-  } 
+  }
 }
+
 
 function windowResized () {
     resizeCanvas(windowWidth, windowHeight);
