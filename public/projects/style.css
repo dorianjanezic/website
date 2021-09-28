@@ -382,3 +382,10 @@ h2:hover {
         font-size: 18px;
       }
 }
+
+@media (max-width:991px) {
+    body {
+        background-size: cover;
+        background-position: center center;
+    }
+}

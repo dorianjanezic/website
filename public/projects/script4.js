@@ -104,3 +104,31 @@ window.onscroll = function() {
   prevScrollpos = currentScrollPos;
 }
 })
+
+var projectPos = 0;
+var projects = ["winter-show1.jpg", "biophinic.png", "untold.png", "rhytmic.png"]
+var projectTitles = ["chatnimal", "biophonica", "untold-town", "city"];
+// for (var p = 0; p < projects.length, p++) {
+//   setMobileBacgkround(p)
+// }
+
+function setMobileBacgkround(){
+  for (var p = 0; p < projectTitles.length; p++) {
+    document.getElementById(projectTitles[p]).style.color = "unset";
+  }
+  document.getElementsByTagName("body")[0].style.backgroundImage = "url('" + projects[projectPos] + "')";
+  document.getElementById(projectTitles[projectPos]).style.color = "red";
+  // console.log(projectPos, projects.length);
+  projectPos++;
+  if (projectPos + 1 > projects.length) {
+    // console.log(projectPos, projects.length);
+    projectPos = 0;
+  }
+}
+
+if (window.innerWidth < 600) {
+  setMobileBacgkround();
+  setInterval(function(){setMobileBacgkround()}, 3000);
+}
+
+
