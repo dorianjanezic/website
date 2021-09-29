@@ -181,6 +181,7 @@ header .navbar a:hover{
     color: white;
     margin: 65px;
     padding-top: 100px;
+    line-height: 1.5;
 }
 
 #title {
@@ -218,7 +219,10 @@ header .navbar a:hover{
 
 
 #video {
-    width: 100%;
+        width: 100%;
+    height: 70vh;
+    position: static;
+    padding-bottom: 30px;
 }
 
 .video-container video {
@@ -264,6 +268,10 @@ header .navbar a:hover{
           height: 20vh;
           margin-top: 100px;
       }
+
+      #video {
+      height: 20vh;
+}
 }
 
 
@@ -279,7 +287,9 @@ header .navbar a:hover{
     #description {
         width: 100%;
     }
-
+    #video {
+        height: 20vh;
+    }
     #about {
         margin: 20px 0 0 20px;
       }
