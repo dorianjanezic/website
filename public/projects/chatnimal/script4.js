@@ -1,36 +1,43 @@
-// P_4_1_2_02
-//
-// Generative Gestaltung – Creative Coding im Web
-// ISBN: 978-3-87439-902-9, First Edition, Hermann Schmidt, Mainz, 2018
-// Benedikt Groß, Hartmut Bohnacker, Julia Laub, Claudius Lazzeroni
-// with contributions by Joey Lee and Niels Poldervaart
-// Copyright 2018
-//
-// http://www.generative-gestaltung.de
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
 
-/**
- * image feedback process.
- *
- * KEYS
- * del, backspace      : clear screen
- * s                   : save png
- */
- 'use strict';
+  (function(){
+    var button = document.getElementById("project-bgvideo__play");
+    var video = document.getElementById("project-bgvideo");
+    var img = document.getElementById("project-bgvideo_poster")
+    var isPlaying = false;
 
-function setup() {
-  createCanvas(windowWidth, windowHeight)
-}
+    if(video.children[0].tagName.toLowerCase() === "iframe"){
+      button.onclick = function(e){
+        e.preventDefault();
+        isPlaying = true;
+        if(!video.children[0].src.includes("?")) video.children[0].src += "?";
+        video.children[0].src += "&auto_play=true&autoplay=1";
+        // setTimeout(function(){
+        img.style.opacity = button.style.opacity = 0;
+        img.style.pointerEvents = "none";
+        // }, 500)
+      }
+    }
 
-window.addEventListener('load', function () {
-  let about = document.getElementById('about')
-  about.style.opacity = map(mouseX(0, width, 0, 1))
-})
+    var nav = document.getElementsByClassName("main-nav");
+    var t;
+    window.addEventListener("load", resetTimer);
+    window.addEventListener("mousemove", resetTimer);
+    window.addEventListener("mousedown", resetTimer);
+    window.addEventListener("touchstart", resetTimer);
+    window.addEventListener("click", resetTimer);
+    window.addEventListener("scroll", resetTimer);
+    window.addEventListener("keypress", resetTimer);
+
+    function hideNav() {
+      if(isPlaying){
+        // nav.style.opacity = 0;
+      }
+    }
+
+    function resetTimer() {
+        clearTimeout(t);
+        // nav.style.opacity = 1;
+        t = setTimeout(hideNav, 500)
+        // 1000 milisec = 1 sec
+    }
+  })();

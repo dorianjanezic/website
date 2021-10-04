@@ -17,7 +17,7 @@
     text-decoration: none;
     /* text-transform: capitalize; */
     /* transition: all .2s linear; */
-    line-height: 1.5;
+    
 }
 
 html {
@@ -46,7 +46,7 @@ section {
 }
 
 header {
-    position: fixed;
+    position: static;
     top: 0;
     left: 0;
     background: transparent;
@@ -60,18 +60,8 @@ header {
     flex-direction: row;
     width: 100%;
     letter-spacing: 0.1rem;
-    background: #000000;
-}
 
-header .logo{
-    text-transform: uppercase;
-    color:white;
-    font-size: 10rem;
-
-}
-
-header .logo:hover {
-    /* letter-spacing: .3rem; */
+    
 }
 
 header .logo span {
@@ -80,25 +70,25 @@ header .logo span {
 }
 
 .navbar {
-    display: contents;
+    /* display: contents; */
 
     justify-content: space-between;
 }
 
 .main-nav {
     display: flex;
-    position: absolute;
+    position: fixed;
     width: 100%;
     justify-content: space-between;
-    /* border-bottom: 1px solid #fff; */
+   
     /* height: 140px; */
-    background: #000000;
+    background: transparent;
 }
 
 
 header .navbar a{
 /* float: left; */
-font-size: 8rem;
+font-size: 7rem;
 color: white;
 margin: 0;
 justify-content: space-between;
@@ -114,13 +104,61 @@ header .navbar a:hover{
 #about {
   margin: 65px 0 0 60px;
   transform: scaleY(0.93);
+  opacity: 1;
+  position: relative;
 }
+
+#about:hover {
+   
+    cursor: pointer;
+    /* background-color: rgb(107, 27, 27); */
+    /* border-bottom: 2px solid white; */
+    transition: 0.4s;
+  }
+  
+  #about::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #about:hover:before {
+    visibility: visible;
+    width: 100%;
+  }
 
 #projects {
  margin: 65px 60px 0 0;
  transform: scaleY(0.93);
+ position: relative;
 }
 
+#projects::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #projects:hover:before {
+    visibility: visible;
+    width: 100%;
+  }
+  
+  #projects:hover {
+    transition: 0.4s;
+  }
 #menu-bars {
     position: fixed;
     top: 1rem; right: 1rem;
@@ -187,6 +225,7 @@ header .navbar a:hover{
 #title-ch {
     font-size: 3rem;
     letter-spacing: 0.1rem;
+    line-height: 1.5;
 }
 
 #chatnimal {
@@ -194,6 +233,7 @@ header .navbar a:hover{
     text-decoration: overline;
     padding-bottom: 50px;
     letter-spacing: 0.1rem;
+    line-height: 1.5;
 }
 
 

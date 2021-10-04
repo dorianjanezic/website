@@ -408,6 +408,7 @@ header .navbar a:hover{
   max-width: 65%;
   font-size: 1.9rem;
   margin: 0;
+  margin-top: 8%;
 }
 
 .description p {
@@ -516,6 +517,10 @@ header .navbar a:hover{
        font-size: 17px;
      }
 
+     .description {
+     margin-top: 0;;
+    }
+
      .cv {
       margin: 65px 150px 65px 120px;
       font-size: 15px;
@@ -563,12 +568,16 @@ header .navbar a:hover{
       font-size: 1px;
     }
 
+    .container {
+      margin-top: 50px;
+    }
+
     .contacts {
       margin-left: 0;
       font-size: 20px;
       align-items: center;
       padding-top: 0;
-      margin-top: 30px;
+      margin-top: 0px;
       text-align: center;
     }
 
@@ -581,7 +590,7 @@ header .navbar a:hover{
 
     .about-page {
       display: flex;
-      flex-direction: column-reverse;
+      flex-direction: column;
       margin: 10px 70px 20px 80px;
       margin: 0px 50px 20px 50px;
       padding-top:0;
@@ -626,6 +635,10 @@ header .navbar a:hover{
       font-size: 2rem;
     }
 
+
+    .description {
+      margin-top: 0;;
+     }
     .cv #creative-tech {
       margin-bottom:25px;
       font-size: 2rem;

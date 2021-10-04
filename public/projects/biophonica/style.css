@@ -17,7 +17,7 @@
     text-decoration: none;
     /* text-transform: capitalize; */
     /* transition: all .2s linear; */
-    line-height: 1.5;
+    /* line-height: 1.5; */
 }
 
 html {
@@ -60,18 +60,8 @@ header {
     flex-direction: row;
     width: 100%;
     letter-spacing: 0.1rem;
-    background: #000000;
-}
 
-header .logo{
-    text-transform: uppercase;
-    color:white;
-    font-size: 10rem;
-
-}
-
-header .logo:hover {
-    /* letter-spacing: .3rem; */
+    
 }
 
 header .logo span {
@@ -98,7 +88,7 @@ header .logo span {
 
 header .navbar a{
 /* float: left; */
-font-size: 5rem;
+font-size: 7rem;
 color: white;
 margin: 0;
 justify-content: space-between;
@@ -231,11 +221,13 @@ header .navbar a:hover{
     padding-bottom: 50px;
     letter-spacing: 0.4rem;
     text-align: center;
+        line-height: 1.5;
 }
 
 #title-ch {
     font-size: 3rem;
     letter-spacing: 0.1rem;
+        line-height: 1.5;
 }
 
 #chatnimal {
@@ -243,6 +235,7 @@ header .navbar a:hover{
     text-decoration: overline;
     padding-bottom: 50px;
     letter-spacing: 0.1rem;
+        line-height: 1.5;
 }
 
 
