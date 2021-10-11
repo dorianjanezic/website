@@ -96,7 +96,7 @@ header {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: rgb(170, 46, 46);
+  background-color: rgb(255, 255, 255);
   visibility: hidden;
   transition: all 0.3s ease-in-out;
 }
@@ -121,7 +121,7 @@ header {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: rgb(170, 46, 46);
+  background-color: rgb(255, 255, 255);
   visibility: hidden;
   transition: all 0.3s ease-in-out;
 }
@@ -155,7 +155,7 @@ header {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: rgb(170, 46, 46);
+  background-color: rgb(255, 255, 255);
   visibility: hidden;
   transition: all 0.3s ease-in-out;
 }
@@ -185,7 +185,7 @@ header {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: rgb(170, 46, 46);
+  background-color: rgb(255, 255, 255);
   visibility: hidden;
   transition: all 0.3s ease-in-out;
 }
@@ -293,6 +293,10 @@ header .navbar a:hover{
   color: #ffffff;
   font-size: 1.6rem;
   letter-spacing: 0.1rem;
+}
+
+#cv {
+  cursor: none;
 }
 
 .cv .h1 {
@@ -418,14 +422,16 @@ header .navbar a:hover{
 .contacts {
   color: #ffffff;
   font-size:2.5rem;
-  text-decoration: overline 1px rgb(170, 46, 46);
+  text-decoration: overline 1px rgb(255, 255, 255);
   margin-left: 50%;
   margin-top: 30%;
+  cursor: none;
 }
 
 .contacts a {
   color: #ffffff;
-  text-decoration: overline 1px rgb(170, 46, 46);
+  text-decoration: overline 1px rgb(255, 255, 255);
+  cursor: none
 }
 
 #contact {
