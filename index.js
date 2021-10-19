@@ -11,6 +11,7 @@ server.listen(port, () => {
     console.log("Server listening at port: " + port);
 });
 
+
 let io = require('socket.io')(server);
 let about = io.of('/about');
 let home = io.of('/home');

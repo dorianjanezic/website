@@ -27,7 +27,7 @@ function draw() {
   background(0);
   positionx = map(mouseX, 0, width/2, 400, 0)
 
-  for (let x1 = 0; x1 < width; x1 += width/20) {
+  for (let x1 = 0; x1 < width; x1 += width/40) {
 
     hitrost = (x1 + time) % width; 
     hitrost1 = width-((x1 + time) % width);
@@ -44,22 +44,22 @@ function draw() {
   triangle(hitrost, -10, mouseX, mouseY, hitrost +=8, -10);
   }
 
-  for (y1 = 0; y1 < height; y1 += height/18) {
+  // for (y1 = 0; y1 < height; y1 += height/18) {
 
-    hitrost = (y1 + time) % height; 
-    hitrost1 = height-((y1 + time) % height);
-    let op1 = hitrost / height;
-    let op2 = hitrost1 / height;
-    op1 =(pow(2*op1-1, 2)*-1 + 1)*150
-    op2 =(pow(2*op2-1, 2)*-1 + 1)*150
+  //   hitrost = (y1 + time) % height; 
+  //   hitrost1 = height-((y1 + time) % height);
+  //   let op1 = hitrost / height;
+  //   let op2 = hitrost1 / height;
+  //   op1 =(pow(2*op1-1, 2)*-1 + 1)*150
+  //   op2 =(pow(2*op2-1, 2)*-1 + 1)*150
 
-    fill(0)
-    stroke(op2)
-    triangle(0-10, hitrost1, mouseX, mouseY, 0-10, hitrost1 += 8)
+  //   fill(0)
+  //   stroke(op2)
+  //   triangle(0-10, hitrost1, mouseX, mouseY, 0-10, hitrost1 += 8)
 
-  //   stroke(op1)
-    triangle(width+10, hitrost, mouseX, mouseY, width+10, hitrost += 8)
-  }
+  // //   stroke(op1)
+  //   triangle(width+10, hitrost, mouseX, mouseY, width+10, hitrost += 8)
+  // }
 }
 
 

@@ -7,7 +7,7 @@ function setup() {
     canvas.position(0,0);
     canvas.style('z-index', '-1');
   img = loadImage('wt-2.png');
-  img1 = loadImage('Scr.png');
+  img1 = loadImage('https://photos.app.goo.gl/LubSqRgc5L5RwsuX8');
   img2 = loadImage('untld.png');
   img3 = loadImage('lasers.png');
  

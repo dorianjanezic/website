@@ -106,7 +106,7 @@ window.onscroll = function() {
 })
 
 var projectPos = 0;
-var projects = ["chatnimal1.1.png", "biophinic.png", "untold.png", "rhytmic.png"]
+var projects = ["chatnimal1.1.png", "ux.jpg", "untold.png", "fv.jpg"]
 var projectTitles = ["chatnimal", "biophonica", "untold-town", "city"];
 // for (var p = 0; p < projects.length, p++) {
 //   setMobileBacgkround(p)
