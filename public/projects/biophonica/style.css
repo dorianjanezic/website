@@ -215,7 +215,7 @@ header .navbar a:hover{
 
 #winter-show {
     padding-bottom: 70px;
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 
@@ -305,11 +305,11 @@ header .navbar a:hover{
     }
 
     #about {
-        margin: 25px 0 20px 25px;
+        margin: -40px 0 20px 25px;
       }
   
       #projects {
-        margin: 25px 25px 0 0;
+        margin: -40px 25px 0 0;
       }
   
       header .navbar a {

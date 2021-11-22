@@ -27,22 +27,22 @@ function draw() {
   background(0);
   positionx = map(mouseX, 0, width/2, 400, 0)
 
-  for (let x1 = 0; x1 < width; x1 += width/20) {
+  // for (let x1 = 0; x1 < width; x1 += width/20) {
 
-    hitrost = (x1 + time) % width; 
-    hitrost1 = width-((x1 + time) % width);
-    let op1 = hitrost / width;
-    let op2 = hitrost1 / width;
-    op1 =(pow(2*op1-1, 2)*-1 + 1)*150
-    op2 =(pow(2*op2-1, 2)*-1 + 1)*150
+  //   hitrost = (x1 + time) % width; 
+  //   hitrost1 = width-((x1 + time) % width);
+  //   let op1 = hitrost / width;
+  //   let op2 = hitrost1 / width;
+  //   op1 =(pow(2*op1-1, 2)*-1 + 1)*150
+  //   op2 =(pow(2*op2-1, 2)*-1 + 1)*150
 
-  fill(0)
-  stroke(op2)
-  triangle(hitrost1, height+10, mouseX, mouseY, hitrost1 += 8, height+10);
+  // fill(0)
+  // stroke(op2)
+  // triangle(hitrost1, height+10, mouseX, mouseY, hitrost1 += 8, height+10);
 
-  stroke(op1)
-  triangle(hitrost, -10, mouseX, mouseY, hitrost +=8, -10);
-  }
+  // stroke(op1)
+  // triangle(hitrost, -10, mouseX, mouseY, hitrost +=8, -10);
+  // }
 
   for (y1 = 0; y1 < height; y1 += height/18) {
 
