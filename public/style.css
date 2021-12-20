@@ -152,9 +152,6 @@ header .navbar a:hover{
     /* letter-spacing: 0.3rem; */
   }
  @media (min-width:1000px) {#dorian-j:hover {
-    /* cursor: pointer; */
-    /* background-color: rgb(107, 27, 27); */
-    /* border-bottom: 2px solid white; */
     transition: 0.4s;
   }
 
@@ -173,10 +170,6 @@ header .navbar a:hover{
   #dorian-j:hover:before {
     visibility: visible;
     width: 100%;
-  }
-
-  #txttt {
-    
   }
 
   #projects::before {
@@ -312,7 +305,6 @@ header .navbar a:hover{
 @media (max-width:450px) {
     html {
         font-size: 50%;
-
     }
 
     #about:hover:before {

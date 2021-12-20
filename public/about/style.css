@@ -81,7 +81,7 @@ header {
   cursor: none;
 }
 
-#about:hover {
+@media (min-width:1000px) {#about:hover {
  
   cursor: none;
   /* background-color: rgb(107, 27, 27); */
@@ -193,6 +193,7 @@ header {
 #projectscv:hover:before {
   visibility: visible;
   width: 100%;
+}
 }
 
 #home {
@@ -439,295 +440,298 @@ header .navbar a:hover{
 }
 
 @media (max-width:991px) {
-    html {
-        font-size: 70%;
-    }
-     body {
-         padding: 0;
-         font-size: 15px;
-     }
-
-     .container {
-       width: 100%;
-     }
-
-     .main-nav {
+  html {
+      font-size: 70%;
+  }
+   body {
+       padding: 0;
        font-size: 15px;
-     }
-    .about-page {
-      margin: 40px;
-      font-size: 3px;
-      padding:0;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      padding-top: 80px;
-    }
+   }
 
-     #about {
-       margin: 45px 0 0 40px;
-     }
+   .container {
+     width: 100%;
+   }
 
+   .main-nav {
+     font-size: 15px;
+   }
+  .about-page {
+    margin: 40px;
+    font-size: 3px;
+    padding:0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 0px;
+  }
 
-     #aboutcv {
-      margin: 45px 0 0 113px;
-      font-weight: 600;
-    }
-
-    #projectscv {
-      margin: 45px 140px 0 0;
-      font-weight: 600;
-    }
-     .description {
-       font-size: 17px;
-       width:75%;
-     }
-
-     #projects {
-       margin: 45px 40px 0 0;
-     }
-
-     #menu-bars {
-         display:initial;
-     }
-
-     /* header {
-        left: -120%;
-        padding: auto;
-     } */
-
-     header.active {
-         left: 0%;
-     }
-
-     header .navbar a {
-       font-size: 5rem;
-       margin: 45px 0 0 20px;
-     }
-
-    .cv .education, .cv .experience, .cv .creative-tech, .cv .skills {
-       grid-template-columns: repeat(1, 1fr);
-     }
-
-     .about-page {
-       grid-row-gap: 40px;
-     }
-
-     .cv .education, .cv .experience, .cv .creative-tech, .cv .skills {
-       grid-row-gap: 10px;
-       margin-bottom: 20px;
-     }
-
-     .contacts {
-       margin-left: 80px;
-       margin-top: 200px;
-       font-size: 17px;
-     }
-
-     .description {
-     margin-top: 0;;
-    }
-
-     .cv {
-      margin: 65px 150px 65px 120px;
-      font-size: 15px;
-     }
+   #about {
+     margin: 45px 0 0 40px;
+   }
 
 
+   #aboutcv {
+    margin: 45px 0 0 113px;
+    font-weight: 600;
+  }
 
-     .cv .nyu1 {
-      margin-bottom: 0;
-     }
+  #projectscv {
+    margin: 45px 140px 0 0;
+    font-weight: 600;
+  }
+   .description {
+     font-size: 17px;
+     width:75%;
+   }
 
-     .cv .nyu {
-       margin-right: 20px;
-     }
+   #projects {
+     margin: 45px 40px 0 0;
+   }
 
-     .cv .sf {
-       margin-bottom: 0;
-     }
 
-     .cv .biophonica {
-       margin-bottom: 0;
-     }
+   /* header {
+      left: -120%;
+      padding: auto;
+   } */
 
-     .cv .software {
-       margin-bottom: 0;
-     }
+   header.active {
+       left: 0%;
+   }
 
-     .cv .skills-1 {
-       margin-bottom: px;
-     }
+   header .navbar a {
+     font-size: 5rem;
+     margin: 45px 0 0 20px;
+   }
+
+  .cv .education, .cv .experience, .cv .creative-tech, .cv .skills {
+     grid-template-columns: repeat(1, 1fr);
+   }
+
+   .about-page {
+     grid-row-gap: 40px;
+   }
+
+   .cv .education, .cv .experience, .cv .creative-tech, .cv .skills {
+     grid-row-gap: 10px;
+     margin-bottom: 20px;
+   }
+
+   .contacts {
+     margin-left: 80px;
+     margin-top: 200px;
+     font-size: 17px;
+   }
+
+   .description {
+   margin-top: 0;;
+  }
+
+   .cv {
+    margin: 65px 150px 65px 120px;
+    font-size: 15px;
+   }
+
+
+
+   .cv .nyu1 {
+    margin-bottom: 0;
+   }
+
+   .cv .nyu {
+     margin-right: 20px;
+   }
+
+   .cv .sf {
+     margin-bottom: 0;
+   }
+
+   .cv .biophonica {
+     margin-bottom: 0;
+   }
+
+   .cv .software {
+     margin-bottom: 0;
+   }
+
+   .cv .skills-1 {
+     margin-bottom: px;
+   }
 }
 
 
 @media (max-width:450px) {
-    html {
-        font-size: 50%;
-    }
-
-    header {
-        width: 100%;
-        font-size: 10%;
-      }
-
-    .main-nav {
-      font-size: 1px;
-    }
-
-    .container {
-      margin-top: 50px;
-    }
-
-    .contacts {
-      margin-left: 0;
-      font-size: 20px;
-      align-items: center;
-      padding-top: 0;
-      margin-top: 0px;
-      text-align: center;
-    }
-
-    .description {
-      font-size: 16px;
-      width: 100%;
-      max-width: 100%;
-      text-align: center;
-    }
-
-    .about-page {
-      display: flex;
-      flex-direction: column-reverse;
-      margin: 10px 70px 20px 80px;
-      margin: 0px 50px 20px 50px;
-      padding-top:0;
-    }
-
-    .cv {
-      margin: 10px 50px 50px 50px;
-      font-size: 14px;
-    }
-
-    .main-nav {
-      font-size: 13px;
-    }
-
-    #aboutcv {
-      margin: 45px 0 30px 46px;
-      font-size: 2.5rem;
-      font-weight: 600;
-    }
-
-    #projectscv {
-      margin: 45px 45px 0 0;
-      font-size: 2.5rem;
-      font-weight: 600;
-    }
-
-    .cv .nyu1 {
-      margin-bottom: 0;
-    }
-
-    .cv #first {
-      margin-bottom: 25px;
-      font-size: 2rem;
-    }
-
-    .cv .education {
-      margin-bottom: 30px;
-    }
-
-    .cv #work-ex {
-      margin-bottom: 25px;
-      font-size: 2rem;
-    }
-
-
-    .description {
-      margin-top: 0;;
-     }
-    .cv #creative-tech {
-      margin-bottom:25px;
-      font-size: 2rem;
-    }
-
-    .cv .skills-1 {
-      font-size: 2rem;
-    }
-
-    .cv .sf {
-      margin-bottom: 0;
-    }
-
-    .cv .experience {
-      margin-bottom: 30px;
-    }
-
-    .cv .biophonica {
-      margin-bottom: 0;
-    }
-
-    .cv .creative-tech {
-      margin-bottom: 30px;
-    }
-
-    .cv .software {
-      margin-bottom: 0;
-    }
-
-    #about {
-      margin: 25px 0 20px 25px;
-    }
-
-    #projects {
-      margin: 25px 25px 0 0;
-    }
-
-    header .navbar a {
-      font-size: 30px;
-    }
-
-    .cv .bolder {
-      text-decoration: none;
-      padding-bottom: 20px;
-    }
-
-    .cv #nyu111 {
-      text-decoration: none;
-      padding-bottom: 20px;
-    }
-
-    .cv #ium111 {
-      text-decoration: none;
-      padding-bottom: 20px;
-    }
-
-    .cv #sf111 {
-      text-decoration: none;
-      padding-bottom: 20px;
-    }
-
-    .cv #krg111 {
-      text-decoration: none;
-      padding-bottom: 20px;
-    }
-
-    .cv #spring111 {
-      text-decoration: none;
-      padding-bottom: 20px;
-    }
-
-    .cv #winter111 {
-      text-decoration: none;
-      padding-bottom: 20px;
-    }
-
-    .cv #csoftware {
-      text-decoration: none;
-      padding-bottom: 20px;
-    }
-
-    .cv #coding111 {
-      text-decoration: none;
-      padding-bottom: 20px;
-    }
+  html {
+      font-size: 50%;
   }
+
+  header {
+      width: 100%;
+      font-size: 10%;
+    }
+
+  .main-nav {
+    font-size: 1px;
+  }
+
+  .container {
+    margin-top: 0px;
+  }
+
+  .contacts {
+    margin-left: 0;
+    font-size: 20px;
+    align-items: center;
+    padding-top: 0;
+    margin-top: 0px;
+    text-align: center;
+    padding-bottom:0px;
+    margin-top:0;
+    transform: translateY(-50px)
+  }
+
+  .description {
+    font-size: 16px;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    margin-top:0;
+    padding-top:0;
+    transform: translateY(-20px);
+  }
+
+  .about-page {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 10px 70px 20px 80px;
+    margin: 0px 50px 20px 50px;
+    padding-top:20px;
+  }
+
+  .cv {
+    margin: 10px 50px 50px 50px;
+    font-size: 14px;
+  }
+
+  .main-nav {
+    font-size: 13px;
+  }
+
+  #aboutcv {
+    margin: 45px 0 30px 46px;
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+
+  #projectscv {
+    margin: 45px 45px 0 0;
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+
+  .cv .nyu1 {
+    margin-bottom: 0;
+  }
+
+  .cv #first {
+    margin-bottom: 25px;
+    font-size: 2rem;
+  }
+
+  .cv .education {
+    margin-bottom: 30px;
+  }
+
+  .cv #work-ex {
+    margin-bottom: 25px;
+    font-size: 2rem;
+  }
+
+
+  .description {
+    margin-top: 0;;
+   }
+  .cv #creative-tech {
+    margin-bottom:25px;
+    font-size: 2rem;
+  }
+
+  .cv .skills-1 {
+    font-size: 2rem;
+  }
+
+  .cv .sf {
+    margin-bottom: 0;
+  }
+
+  .cv .experience {
+    margin-bottom: 30px;
+  }
+
+  .cv .biophonica {
+    margin-bottom: 0;
+  }
+
+  .cv .creative-tech {
+    margin-bottom: 30px;
+  }
+
+  .cv .software {
+    margin-bottom: 0;
+  }
+
+  #about {
+    margin: 25px 0 20px 25px;
+  }
+
+  #projects {
+    margin: 25px 25px 0 0;
+  }
+
+  header .navbar a {
+    font-size: 30px;
+  }
+
+  .cv .bolder {
+    text-decoration: none;
+    padding-bottom: 20px;
+  }
+
+  .cv #nyu111 {
+    text-decoration: none;
+    padding-bottom: 20px;
+  }
+
+  .cv #ium111 {
+    text-decoration: none;
+    padding-bottom: 20px;
+  }
+
+  .cv #sf111 {
+    text-decoration: none;
+    padding-bottom: 20px;
+  }
+
+  .cv #krg111 {
+    text-decoration: none;
+    padding-bottom: 20px;
+  }
+
+  .cv #spring111 {
+    text-decoration: none;
+    padding-bottom: 20px;
+  }
+
+  .cv #winter111 {
+    text-decoration: none;
+    padding-bottom: 20px;
+  }
+
+  .cv #csoftware {
+    text-decoration: none;
+    padding-bottom: 20px;
+  }
+
+  .cv #coding111 {
+    text-decoration: none;
+    padding-bottom: 20px;
+  }
+}
